@@ -1,12 +1,24 @@
 {
   "name": "imji",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "private": true,
+  "description": "Save and share your images",
+  "author": "zetharionn",
+  "license": "MIT",
+  "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "homepage": "https://github.com/zetharionn/imji",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zetharionn/imji"
+  },
+  "bugs": {
+    "url": "https://github.com/zetharionn/imji/issues"
+  },
   "keywords": [],
-  "author": "",
-  "license": "ISC"
+  "packageManager": "pnpm@9.14.4",
+  "engines": {
+    "node": ">=20.x"
+  }
 }
