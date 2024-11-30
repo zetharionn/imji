@@ -1,39 +1,40 @@
 {
-  "name": "imji",
-  "private": true,
-  "description": "Save and share your images",
-  "author": "zetharionn",
-  "license": "MIT",
-  "type": "module",
-  "scripts": {
-    "dev": "vite",
-    "build": "tsc -b && vite build",
-    "preview": "vite preview"
-  },
-  "dependencies": {
-    "react": "^18.3.1",
-    "react-dom": "^18.3.1"
-  },
-  "devDependencies": {
-    "@biomejs/biome": "^1.9.4",
-    "@types/node": "^22.10.1",
-    "@types/react": "^18.3.12",
-    "@types/react-dom": "^18.3.1",
-    "@vitejs/plugin-react-swc": "^3.7.2",
-    "typescript": "~5.7.2",
-    "vite": "^6.0.1"
-  },
-  "homepage": "https://github.com/zetharionn/imji",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/zetharionn/imji"
-  },
-  "bugs": {
-    "url": "https://github.com/zetharionn/imji/issues"
-  },
-  "keywords": [],
-  "packageManager": "pnpm@9.14.4",
-  "engines": {
-    "node": ">=20.x"
-  }
+	"name": "imji",
+	"private": true,
+	"description": "Save and share your images",
+	"author": "zetharionn",
+	"license": "MIT",
+	"type": "module",
+	"scripts": {
+		"dev": "vite",
+		"build": "tsc -b && vite build",
+		"preview": "vite preview",
+		"lint": "biome check --write"
+	},
+	"dependencies": {
+		"react": "^18.3.1",
+		"react-dom": "^18.3.1"
+	},
+	"devDependencies": {
+		"@biomejs/biome": "^1.9.4",
+		"@types/node": "^22.10.1",
+		"@types/react": "^18.3.12",
+		"@types/react-dom": "^18.3.1",
+		"@vitejs/plugin-react-swc": "^3.7.2",
+		"typescript": "~5.7.2",
+		"vite": "^6.0.1"
+	},
+	"homepage": "https://github.com/zetharionn/imji",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/zetharionn/imji"
+	},
+	"bugs": {
+		"url": "https://github.com/zetharionn/imji/issues"
+	},
+	"keywords": [],
+	"packageManager": "pnpm@9.14.4",
+	"engines": {
+		"node": ">=20.x"
+	}
 }
