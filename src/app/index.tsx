@@ -1,3 +1,5 @@
+import './ui'
+
 const App = () => {
 	return <div>imji</div>
 }
