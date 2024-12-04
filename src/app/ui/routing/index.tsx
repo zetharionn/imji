@@ -1,3 +1,4 @@
+import { homeRoute } from '@pages/Home'
 import { rootRoute } from '@pages/Root'
 import { RouterProvider, createRouter } from '@tanstack/react-router'
 
@@ -7,7 +8,7 @@ declare module '@tanstack/react-router' {
 	}
 }
 
-const routeTree = rootRoute.addChildren([])
+const routeTree = rootRoute.addChildren([homeRoute])
 
 const router = createRouter({ routeTree })
 
