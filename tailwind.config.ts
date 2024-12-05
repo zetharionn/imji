@@ -9,4 +9,4 @@ export default {
 	],
 	darkMode: 'class',
 	plugins: [nextui()]
-} as Config
+} satisfies Config
