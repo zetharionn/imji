@@ -8,5 +8,10 @@ export default {
 		'./index.html'
 	],
 	darkMode: 'class',
-	plugins: [nextui()]
-} as Config
+	plugins: [
+		nextui({
+			defaultTheme: 'dark',
+			defaultExtendTheme: 'dark'
+		})
+	]
+} satisfies Config
