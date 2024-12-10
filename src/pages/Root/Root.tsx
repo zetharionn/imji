@@ -1,6 +1,11 @@
 import { Outlet } from '@tanstack/react-router'
-import { withProviders } from './lib'
+import { Devtools, withProviders } from './lib'
 
 export const Root = withProviders(() => {
-	return <Outlet />
+	return (
+		<>
+			<Outlet />
+			<Devtools />
+		</>
+	)
 })
