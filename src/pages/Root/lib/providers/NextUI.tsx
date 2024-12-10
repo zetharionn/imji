@@ -1,8 +1,8 @@
 import { NextUIProvider } from '@nextui-org/react'
 import { useRouter } from '@tanstack/react-router'
-import type { ComponentType } from 'react'
+import type { FC } from 'react'
 
-export const NextUI = (Component: ComponentType) => () => {
+export const NextUI = (Component: FC) => () => {
 	const router = useRouter()
 
 	return (
