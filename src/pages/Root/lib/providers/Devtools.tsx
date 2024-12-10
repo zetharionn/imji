@@ -22,6 +22,7 @@ export const Devtools = () => {
 	return (
 		<Suspense>
 			<RouterDevtools />
+			<QueryDevtools />
 		</Suspense>
 	)
 }
