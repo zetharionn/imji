@@ -1,1 +1,2 @@
-export * from './ui'
+export * from './NotFound'
+export * from './NotFound.route'
