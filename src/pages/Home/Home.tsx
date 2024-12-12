@@ -1,3 +1,9 @@
+import { Nav } from '@widgets/Nav'
+
 export const Home = () => {
-	return <div>Home</div>
+	return (
+		<div>
+			<Nav />
+		</div>
+	)
 }
