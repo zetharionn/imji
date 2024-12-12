@@ -1,1 +1,1 @@
-export * from './github-mark.svg'
+export { default as gitHubMark } from './github-mark.svg'
