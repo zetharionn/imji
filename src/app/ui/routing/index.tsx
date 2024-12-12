@@ -10,9 +10,5 @@ declare module '@tanstack/react-router' {
 }
 
 const routeTree = rootRoute.addChildren([homeRoute])
-
 const router = createRouter({ routeTree, notFoundRoute })
-
-export const Routing = () => {
-	return <RouterProvider router={router} />
-}
+export const Routing = () => <RouterProvider router={router} />
