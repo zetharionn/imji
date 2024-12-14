@@ -1,4 +1,4 @@
-import { Navbar, NavbarBrand, Image, NavbarItem, Link } from '@nextui-org/react'
+import { Image, Link, Navbar, NavbarBrand, NavbarItem } from '@nextui-org/react'
 import { gitHubMark } from '@shared/ui'
 
 export const Nav = () => {
