@@ -2,7 +2,7 @@ import type { SupabaseClient } from '@supabase/supabase-js'
 import type { FileBody, FileOptions, IImageService } from './Image.types'
 
 export class ImageService implements IImageService {
-	readonly supabaseClient: SupabaseClient
+	private supabaseClient: SupabaseClient
 
 	constructor(supabaseClient: SupabaseClient) {
 		this.supabaseClient = supabaseClient
