@@ -1,5 +1,5 @@
 import { compose } from '@shared/helpers'
-import { NextUI, Query } from '../providers'
 import type { FC } from 'react'
+import { NextUI, Query } from '../providers'
 
 export const withProviders = compose<FC>(NextUI, Query)
