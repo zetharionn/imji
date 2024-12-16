@@ -1,9 +1,9 @@
-import { Nav } from '@widgets/Nav'
+import { Uploader } from '@widgets/Uploader'
 
 export const Home = () => {
 	return (
-		<div>
-			<Nav />
-		</div>
+		<>
+			<Uploader />
+		</>
 	)
 }
