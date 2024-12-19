@@ -1,4 +1,4 @@
-# Deps
+# Node
 node_modules
 .pnp
 .pnp.js
@@ -6,10 +6,7 @@ node_modules
 
 # Enviroment
 .env
-.env.local
-.env.development.local
-.env.test.local
-.env.production.local
+*.local
 
 # Logs
 logs
@@ -18,8 +15,6 @@ pnpm-debug.log*
 pnpm-error.log*
 
 # Build
-.next/
-out/
 build
 cache
 dist
