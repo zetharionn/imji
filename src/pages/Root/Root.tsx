@@ -1,6 +1,6 @@
 import { Outlet } from '@tanstack/react-router'
-import { Devtools, withProviders } from './lib'
 import { Nav } from '@widgets/Nav'
+import { Devtools, withProviders } from './lib'
 
 export const Root = withProviders(() => {
 	return (
