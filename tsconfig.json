@@ -1,35 +1,17 @@
 {
+	"exclude": ["node_modules/**/*", "dist/**/*"],
 	"compilerOptions": {
-		/* Environment */
+		/* Language and Environment */
 		"target": "ESNext",
 		"lib": ["ESNext", "DOM", "DOM.Iterable"],
-		"esModuleInterop": true,
-		"skipLibCheck": true,
 		"noEmit": true,
+		"jsx": "react-jsx",
 
-		/* Module */
+		/* Modules */
 		"module": "ESNext",
 		"moduleResolution": "bundler",
 		"moduleDetection": "force",
-		"isolatedModules": true,
-
-		/* Linting */
-		"strict": true,
-		"noImplicitAny": true,
-		"noUnusedLocals": true,
-		"noUnusedParameters": true,
-
-		/* Imports */
-		"allowSyntheticDefaultImports": true,
 		"allowImportingTsExtensions": true,
-		"forceConsistentCasingInFileNames": true,
-		"resolveJsonModule": true,
-
-		/* Javascript */
-		"allowJs": true,
-		"jsx": "react-jsx",
-
-		/* Aliases */
 		"baseUrl": "./src",
 		"paths": {
 			"@app/*": ["./app/*"],
@@ -38,6 +20,23 @@
 			"@features/*": ["./features/*"],
 			"@entities/*": ["./entities/*"],
 			"@shared/*": ["./shared/*"]
-		}
+		},
+
+		/* Completeness */
+		"skipDefaultLibCheck": true,
+		"skipLibCheck": true,
+
+		/* Type Checking */
+		"strict": true,
+		"noImplicitAny": true,
+		"noUnusedLocals": true,
+		"noUnusedParameters": true,
+		"strictFunctionTypes": true,
+
+		/* Interop Constraints */
+		"esModuleInterop": true,
+		"isolatedModules": true,
+		"allowSyntheticDefaultImports": true,
+		"forceConsistentCasingInFileNames": true
 	}
 }
