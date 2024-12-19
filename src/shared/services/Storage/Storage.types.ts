@@ -1,5 +1,6 @@
-export interface IImageService {
+export interface IStorageService {
 	upload: (
+		bucket: string,
 		path: string,
 		fileBody: FileBody,
 		fileOptions?: FileOptions
