@@ -1,32 +1,13 @@
 export interface IStorageService {
-	upload: (
-		bucket: string,
-		path: string,
-		fileBody: FileBody,
-		fileOptions?: FileOptions
-	) => StorageResponse
+	upload: (bucket: string, path: string, file: File) => UploadResponse
+	publicUrl: (bucket: string, path: string) => PublicUrlResponse
 }
 
-export type FileBody =
-	| ArrayBuffer
-	| ArrayBufferView
-	| Blob
-	| Buffer
-	| File
-	| FormData
-	| NodeJS.ReadableStream
-	| ReadableStream<Uint8Array>
-	| URLSearchParams
-	| string
-
-export interface FileOptions {
-	cacheControl?: string
-	contentType?: string
-	duplex?: string
-	upsert?: boolean
-}
-
-export type StorageResponse = Promise<{
+export type UploadResponse = Promise<{
 	data: { id: string; path: string; fullPath: string } | null
 	error: null | Error
+}>
+
+export type PublicUrlResponse = Promise<{
+	data: { publicUrl: string }
 }>
