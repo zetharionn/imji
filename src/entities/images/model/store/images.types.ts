@@ -1,5 +1,6 @@
-import type { StorageResponse } from '@shared/services'
+import type { PublicUrlResponse, UploadResponse } from '@shared/services'
 
 export interface IImagesStore {
-	upload: (file: File) => StorageResponse
+	upload: (file: File) => UploadResponse
+	publicUrl: (path: string) => PublicUrlResponse
 }
