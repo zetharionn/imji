@@ -14,4 +14,11 @@ export class StorageService implements IStorageService {
 			.upload(path, file)
 		return { data, error }
 	}
+
+	async publicUrl(bucket: string, path: string) {
+		const { data } = await this.supabaseClient.storage
+			.from(bucket)
+			.getPublicUrl(path)
+		return { data }
+	}
 }
