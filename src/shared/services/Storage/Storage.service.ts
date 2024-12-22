@@ -1,5 +1,5 @@
 import type { SupabaseClient } from '@supabase/supabase-js'
-import type { FileBody, FileOptions, IStorageService } from './Storage.types'
+import type { IStorageService } from './Storage.types'
 
 export class StorageService implements IStorageService {
 	private supabaseClient: SupabaseClient
@@ -8,15 +8,10 @@ export class StorageService implements IStorageService {
 		this.supabaseClient = supabaseClient
 	}
 
-	async upload(
-		bucket: string,
-		path: string,
-		fileBody: FileBody,
-		fileOptions?: FileOptions
-	) {
+	async upload(bucket: string, path: string, file: File) {
 		const { data, error } = await this.supabaseClient.storage
 			.from(bucket)
-			.upload(path, fileBody, fileOptions)
+			.upload(path, file)
 		return { data, error }
 	}
 }
