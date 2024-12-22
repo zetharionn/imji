@@ -11,7 +11,7 @@ export const Uploader = () => {
 					Save and share your images
 				</h1>
 			</div>
-			<div className='flex flex-col gap-4'>
+			<div className='flex flex-col gap-4 w-64'>
 				<FileButton
 					onFile={file => mutation.mutate(file)}
 					isLoading={mutation.isPending}
