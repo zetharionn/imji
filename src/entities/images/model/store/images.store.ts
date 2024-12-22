@@ -8,5 +8,11 @@ export const useImagesStore = create<IImagesStore>(() => ({
 			if (res.error) throw res.error
 			return res
 		})
+	},
+	publicUrl(path: string) {
+		return storageService.publicUrl('images', path).then(res => {
+			if (!res.data) throw Error("Can't get public url")
+			return res
+		})
 	}
 }))
