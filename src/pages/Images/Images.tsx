@@ -17,8 +17,8 @@ export const Images = () => {
 	}, [publicUrl, image])
 
 	return (
-		<>
-			<div className='flex text-center items-center justify-center'>
+		<div className='h-[80vh] flex text-center items-center justify-center'>
+			<div>
 				<Card>
 					<CardHeader>
 						<h2 className='text-2xl font-bold'>{image}</h2>
@@ -28,6 +28,6 @@ export const Images = () => {
 					</CardBody>
 				</Card>
 			</div>
-		</>
+		</div>
 	)
 }
