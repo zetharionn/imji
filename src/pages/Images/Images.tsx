@@ -1,21 +1,11 @@
-import { useImagesStore } from '@entities/images'
 import { Card, CardBody, CardHeader, Image } from '@nextui-org/react'
-import { getRouteApi } from '@tanstack/react-router'
-import { useEffect, useState } from 'react'
+import type { FC } from 'react'
 
-const imagesRoute = getRouteApi('/images/$image')
+export interface IImages {
+	image: string
+}
 
-export const Images = () => {
-	const { image } = imagesRoute.useParams()
-	const publicUrl = useImagesStore(state => state.publicUrl)
-	const [url, setUrl] = useState<string>()
-
-	useEffect(() => {
-		publicUrl(image).then(res => {
-			setUrl(res.data.publicUrl)
-		})
-	}, [publicUrl, image])
-
+export const Images: FC<IImages> = ({ image }) => {
 	return (
 		<div className='h-[80vh] flex text-center items-center justify-center'>
 			<div>
@@ -24,7 +14,7 @@ export const Images = () => {
 						<h2 className='text-2xl font-bold'>{image}</h2>
 					</CardHeader>
 					<CardBody>
-						<Image src={url} width={850} />
+						<Image src={image} width={850} />
 					</CardBody>
 				</Card>
 			</div>
