@@ -10,7 +10,5 @@ export const imagesRoute = createRoute({
 		const image = await publicUrl(imageId).then(res => res.data.publicUrl)
 		return { image }
 	},
-	component: ({ image }) => {
-		return <Images image={image} />
-	}
+	component: Images
 })
