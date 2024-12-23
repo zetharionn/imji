@@ -1,4 +1,4 @@
-import { compose } from '@shared/helpers'
+import { compose } from '@shared/lib'
 import type { FC } from 'react'
 import { NextUI, Query } from '../providers'
 
