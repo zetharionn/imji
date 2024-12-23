@@ -1,11 +1,11 @@
 import { Card, CardBody, CardHeader, Image } from '@nextui-org/react'
-import type { FC } from 'react'
+import { getRouteApi } from '@tanstack/react-router'
 
-export interface IImages {
-	image: string
-}
+const imagesRoute = getRouteApi('/images/$imageId')
 
-export const Images: FC<IImages> = ({ image }) => {
+export const Images = () => {
+	const { image } = imagesRoute.useLoaderData()
+
 	return (
 		<div className='h-[80vh] flex text-center items-center justify-center'>
 			<div>
