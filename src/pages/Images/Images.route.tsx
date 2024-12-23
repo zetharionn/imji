@@ -1,8 +1,8 @@
 import { publicUrl } from '@entities/images'
 import { rootRoute } from '@pages/Root'
+import { ROUTES } from '@shared/lib'
 import { createRoute } from '@tanstack/react-router'
 import { Images } from './Images'
-import { ROUTES } from '@shared/lib'
 
 export const imagesRoute = createRoute({
 	getParentRoute: () => rootRoute,
