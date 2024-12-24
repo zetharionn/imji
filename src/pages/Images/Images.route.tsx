@@ -6,7 +6,7 @@ import { Images } from './Images'
 
 export const imagesRoute = createRoute({
 	getParentRoute: () => rootRoute,
-	path: ROUTES.IMAGES,
+	path: `${ROUTES.IMAGES}/$imageId`,
 	loader: async ({ params: { imageId } }) => {
 		const image = await publicUrl(imageId).then(res => res.data.publicUrl)
 		return { image }
