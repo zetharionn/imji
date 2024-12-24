@@ -4,6 +4,7 @@ import { upload } from '@entities/images'
 
 export const UploadButton = () => {
 	const mutation = useMutation({
+		mutationKey: ['upload'],
 		mutationFn: upload
 	})
 
