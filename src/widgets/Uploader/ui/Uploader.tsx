@@ -13,14 +13,16 @@ export const Uploader = () => {
 				/>
 				<Alert
 					isVisible={mutation.isSuccess}
+					description='Uploaded successfully'
 					color='success'
 					variant='bordered'
-				>
-					Uploaded successfully
-				</Alert>
-				<Alert isVisible={mutation.isError} color='danger' variant='bordered'>
-					{mutation.error?.message}
-				</Alert>
+				/>
+				<Alert
+					isVisible={mutation.isError}
+					description={mutation.error?.message}
+					color='danger'
+					variant='bordered'
+				/>
 			</div>
 		</div>
 	)
