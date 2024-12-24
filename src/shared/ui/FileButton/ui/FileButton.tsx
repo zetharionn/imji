@@ -1,11 +1,11 @@
 import { Button } from '@nextui-org/react'
-import type { IFileButton } from './FileButton.types'
 import {
 	type ChangeEvent,
 	type FC,
 	type PropsWithChildren,
 	useRef
 } from 'react'
+import type { IFileButton } from './FileButton.types'
 
 export const FileButton: FC<PropsWithChildren<IFileButton>> = ({
 	children,
