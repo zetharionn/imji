@@ -1,5 +1,6 @@
 import { FileButton, useFileButton } from '@features/FileButton'
-import { Alert } from '@nextui-org/react'
+import { Alert, Link } from '@nextui-org/react'
+import { ROUTES } from '@shared/lib'
 
 export const Uploader = () => {
 	const { mutation } = useFileButton()
@@ -13,12 +14,21 @@ export const Uploader = () => {
 				/>
 				<Alert
 					isVisible={mutation.isSuccess}
-					description='Uploaded successfully'
+					title='Uploaded successfully'
+					description={
+						<Link
+							color='success'
+							href={`${ROUTES.IMAGES}/${mutation.data?.data?.path}`}
+						>
+							Click here to view the image
+						</Link>
+					}
 					color='success'
 					variant='bordered'
 				/>
 				<Alert
 					isVisible={mutation.isError}
+					title='Error'
 					description={mutation.error?.message}
 					color='danger'
 					variant='bordered'
