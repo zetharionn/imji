@@ -1,11 +1,17 @@
 export interface IStorageService {
 	upload: (bucket: string, path: string, file: File) => Promise<UploadResponse>
+	download: (bucket: string, path: string) => Promise<DownloadResponse>
 	publicUrl: (bucket: string, path: string) => Promise<PublicUrlResponse>
 }
 
 export type UploadResponse = {
 	data: { id: string; path: string; fullPath: string } | null
-	error: null | Error
+	error: Error | null
+}
+
+export type DownloadResponse = {
+	data: Blob | null
+	error: Error | null
 }
 
 export type PublicUrlResponse = {
