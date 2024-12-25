@@ -22,6 +22,13 @@ export class StorageService implements IStorageService {
 		return { data, error }
 	}
 
+	async move(bucket: string, path: string, newPath: string) {
+		const { data, error } = await this.supabaseClient.storage
+			.from(bucket)
+			.move(path, newPath)
+		return { data, error }
+	}
+
 	async publicUrl(bucket: string, path: string) {
 		const { data } = await this.supabaseClient.storage
 			.from(bucket)
