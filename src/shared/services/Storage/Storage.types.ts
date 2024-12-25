@@ -2,6 +2,7 @@ export interface IStorageService {
 	upload: (bucket: string, path: string, file: File) => Promise<UploadResponse>
 	download: (bucket: string, path: string) => Promise<DownloadResponse>
 	move: (bucket: string, path: string, newPath: string) => Promise<MoveResponse>
+	remove: (bucket: string, paths: string[]) => Promise<RemoveResponse>
 	publicUrl: (bucket: string, path: string) => Promise<PublicUrlResponse>
 }
 
@@ -17,6 +18,32 @@ export type DownloadResponse = {
 
 export type MoveResponse = {
 	data: { message: string } | null
+	error: Error | null
+}
+
+export type RemoveResponse = {
+	data:
+		| {
+				name: string
+				bucket_id: string
+				owner: string
+				id: string
+				updated_at: string
+				created_at: string
+				last_accessed_at: string
+				metadata: Record<string, string>
+				buckets: {
+					id: string
+					name: string
+					owner: string
+					file_size_limit?: number
+					allowed_mime_types?: string[]
+					created_at: string
+					updated_at: string
+					public: boolean
+				}
+		  }[]
+		| null
 	error: Error | null
 }
 
