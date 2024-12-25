@@ -36,7 +36,7 @@ export class StorageService implements IStorageService {
 		return { data, error }
 	}
 
-	async publicUrl(bucket: string, path: string) {
+	async retrieve(bucket: string, path: string) {
 		const { data } = await this.supabaseClient.storage
 			.from(bucket)
 			.getPublicUrl(path)

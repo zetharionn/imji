@@ -3,7 +3,7 @@ export interface IStorageService {
 	download: (bucket: string, path: string) => Promise<DownloadResponse>
 	move: (bucket: string, path: string, newPath: string) => Promise<MoveResponse>
 	remove: (bucket: string, paths: string[]) => Promise<RemoveResponse>
-	publicUrl: (bucket: string, path: string) => Promise<PublicUrlResponse>
+	retrieve: (bucket: string, path: string) => Promise<RetrieveResponse>
 }
 
 export type UploadResponse = {
@@ -47,6 +47,6 @@ export type RemoveResponse = {
 	error: Error | null
 }
 
-export type PublicUrlResponse = {
+export type RetrieveResponse = {
 	data: { publicUrl: string }
 }
