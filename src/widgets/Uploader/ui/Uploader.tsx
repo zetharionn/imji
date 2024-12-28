@@ -1,9 +1,10 @@
-import { UploadButton, useUploadButton } from '@features/UploadButton'
+import { useUploadState } from '@entities/image'
+import { UploadButton } from '@features/UploadButton'
 import { Alert, Link } from '@nextui-org/react'
 import { ROUTES } from '@shared/lib'
 
 export const Uploader = () => {
-	const { data, error, status } = useUploadButton()
+	const { data, error, status } = useUploadState()
 
 	return (
 		<div className='flex flex-col text-center items-center justify-center gap-4'>

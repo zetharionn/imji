@@ -1,22 +1,8 @@
-import { Card, CardBody, CardHeader, Image } from '@nextui-org/react'
-import { getRouteApi } from '@tanstack/react-router'
-
-const imagesRoute = getRouteApi('/images/$imageId')
-
 export const Images = () => {
-	const { imageId, imageUrl } = imagesRoute.useLoaderData()
-
 	return (
 		<div className='h-[80vh] flex text-center items-center justify-center'>
 			<div>
-				<Card>
-					<CardHeader>
-						<h2 className='text-2xl font-bold'>{imageId}</h2>
-					</CardHeader>
-					<CardBody>
-						<Image src={imageUrl} width={850} />
-					</CardBody>
-				</Card>
+				<h1>Under development</h1>
 			</div>
 		</div>
 	)
