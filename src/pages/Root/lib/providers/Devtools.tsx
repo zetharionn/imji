@@ -1,22 +1,20 @@
 import { Suspense, lazy } from 'react'
 
-const RouterDevtools =
-	process.env.NODE_ENV === 'production'
-		? () => null
-		: lazy(() =>
-				import('@tanstack/router-devtools').then(res => ({
-					default: res.TanStackRouterDevtools
-				}))
-			)
+const RouterDevtools = import.meta.env.DEV
+	? lazy(() =>
+			import('@tanstack/router-devtools').then(res => ({
+				default: res.TanStackRouterDevtools
+			}))
+		)
+	: () => null
 
-const QueryDevtools =
-	process.env.NODE_ENV === 'production'
-		? () => null
-		: lazy(() =>
-				import('@tanstack/react-query-devtools').then(res => ({
-					default: res.ReactQueryDevtools
-				}))
-			)
+const QueryDevtools = import.meta.env.DEV
+	? lazy(() =>
+			import('@tanstack/react-query-devtools').then(res => ({
+				default: res.ReactQueryDevtools
+			}))
+		)
+	: () => null
 
 export const Devtools = () => {
 	return (

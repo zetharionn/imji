@@ -1,12 +1,8 @@
-import { upload } from '@entities/images'
+import { useUpload } from '@entities/image'
 import { FileButton } from '@shared/ui'
-import { useMutation } from '@tanstack/react-query'
 
 export const UploadButton = () => {
-	const mutation = useMutation({
-		mutationKey: ['upload'],
-		mutationFn: upload
-	})
+	const mutation = useUpload()
 
 	return (
 		<FileButton
