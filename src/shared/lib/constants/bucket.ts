@@ -1,1 +1,1 @@
-export const BUCKET = process.env.NODE_ENV === 'production' ? 'images' : 'dev'
+export const BUCKET = import.meta.env.DEV ? 'dev' : 'images'
