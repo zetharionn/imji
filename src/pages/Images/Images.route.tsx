@@ -5,6 +5,7 @@ import { Images } from './Images'
 
 export const imagesRoute = createRoute({
 	getParentRoute: () => rootRoute,
-	path: `${ROUTES.IMAGES}/$imageId`,
-	component: Images
+	path: `${ROUTES.IMAGES}/$path`,
+	component: Images,
+	loader: ({ params: { path } }) => path
 })

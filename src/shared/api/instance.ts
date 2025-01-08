@@ -1,6 +1,6 @@
+import { BUCKET } from '@shared/lib'
 import { createClient } from '@supabase/supabase-js'
 import { StorageService } from './services/storage'
-import { BUCKET } from '@shared/lib'
 
 export const supabaseClient = createClient(
 	import.meta.env.VITE_SUPABASE_URL,
