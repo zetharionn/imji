@@ -8,7 +8,8 @@ export const useRetrieve = (path: string) => {
 		queryFn: async () => {
 			const response = await storageService.retrieve(path)
 			return validateUrl(response.data.publicUrl)
-		}
+		},
+		gcTime: 0
 	})
 
 	return data
