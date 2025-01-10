@@ -1,4 +1,4 @@
-export const NotFound = () => {
+const NotFound = () => {
 	return (
 		<div className='h-[80vh] flex text-center items-center justify-center'>
 			<div>
@@ -7,3 +7,5 @@ export const NotFound = () => {
 		</div>
 	)
 }
+
+export default NotFound
