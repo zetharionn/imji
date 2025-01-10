@@ -15,7 +15,7 @@ See [MIT license](https://github.com/zetharionn/imji/blob/main/LICENSE.md).
 
 See [code of conduct](https://github.com/zetharionn/imji/blob/main/.github/CODE_OF_CONDUCT.md).
 
-# Contributing
+## Contributing
 
 See [contributing guideline](https://github.com/zetharionn/imji/blob/main/.github/CONTRIBUTING.md).
 
