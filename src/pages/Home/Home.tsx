@@ -1,6 +1,6 @@
 import { Uploader } from '@widgets/Uploader'
 
-export const Home = () => {
+const Home = () => {
 	return (
 		<div className='h-[80vh] flex flex-col text-center items-center justify-center gap-4'>
 			<div>
@@ -14,3 +14,5 @@ export const Home = () => {
 		</div>
 	)
 }
+
+export default Home

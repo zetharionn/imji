@@ -5,7 +5,7 @@ import { Viewer } from '@widgets/Viewer'
 
 const imagesRoute = getRouteApi(`${ROUTES.IMAGES}/$path`)
 
-export const Images = () => {
+const Images = () => {
 	const path = imagesRoute.useLoaderData()
 	const url = useRetrieve(path)
 	const { status } = useRetrieveState()
@@ -16,3 +16,5 @@ export const Images = () => {
 		</div>
 	)
 }
+
+export default Images
