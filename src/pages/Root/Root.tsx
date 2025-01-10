@@ -2,7 +2,7 @@ import { Outlet } from '@tanstack/react-router'
 import { Nav } from '@widgets/Nav'
 import { Devtools, withProviders } from './lib'
 
-export const Root = withProviders(() => {
+const Root = () => {
 	return (
 		<>
 			<Nav />
@@ -10,4 +10,6 @@ export const Root = withProviders(() => {
 			<Devtools />
 		</>
 	)
-})
+}
+
+export default withProviders(Root)

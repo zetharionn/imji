@@ -1,7 +1,7 @@
-import type { FC } from 'react'
-import type { IViewer } from './Viewer.types'
 import { ImageCard } from '@features/ImageCard'
 import { Alert, Spinner } from '@nextui-org/react'
+import type { FC } from 'react'
+import type { IViewer } from './Viewer.types'
 
 export const Viewer: FC<IViewer> = ({ url, isLoading }) => {
 	return (
