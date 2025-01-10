@@ -5,7 +5,7 @@ Save and share your images
 
 ## Code of conduct
 
-See [Code of conduct](https://github.com/zetharionn/imji/blob/main/CODE_OF_CONDUCT.md).
+See [Code of conduct](https://github.com/zetharionn/imji/blob/main/.github/CODE_OF_CONDUCT.md).
 
 ## License
 
