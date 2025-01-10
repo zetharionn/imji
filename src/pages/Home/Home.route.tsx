@@ -1,10 +1,14 @@
+import { Loader } from '@pages/Loader'
 import { rootRoute } from '@pages/Root'
-import { ROUTES } from '@shared/lib'
+import { ROUTES, withSuspense } from '@shared/lib'
 import { createRoute } from '@tanstack/react-router'
-import Home from './Home'
+import { lazy } from 'react'
 
 export const homeRoute = createRoute({
 	getParentRoute: () => rootRoute,
 	path: ROUTES.HOME,
-	component: Home
+	component: withSuspense(
+		lazy(async () => import('./Home')),
+		Loader
+	)
 })
