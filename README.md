@@ -1,7 +1,11 @@
 
-## Imji
+<div align="center">
 
-Save and share your images
+<h3> <img src="https://github.com/zetharionn/imji/blob/main/public/imji-mark.svg" align="center" height="50" /> Imji</h3>
+
+<p>Save and share your images</p>
+
+</div>
 
 ## License
 
