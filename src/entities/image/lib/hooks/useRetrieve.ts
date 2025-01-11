@@ -2,11 +2,12 @@ import { useQuery } from '@tanstack/react-query'
 import { retrieve } from '../helpers'
 
 export const useRetrieve = (path: string) => {
-	const { data } = useQuery({
+	const query = useQuery({
 		queryKey: ['retrieve'],
 		queryFn: () => retrieve(path),
-		gcTime: 0
+		gcTime: 0,
+		retry: false
 	})
 
-	return data
+	return query
 }

@@ -1,7 +1,9 @@
 import { storageService } from '@shared/api'
-import { validateUrl } from '@shared/lib'
 
-export const retrieve = async (path: string) =>
-	await storageService
-		.retrieve(path)
-		.then(res => validateUrl(res.data.publicUrl))
+export const retrieve = async (path: string) => {
+	const response = await storageService.retrieve(path)
+	if (response.error) {
+		throw response.error
+	}
+	return response
+}
