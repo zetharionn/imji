@@ -1,14 +1,10 @@
-import { storageService } from '@shared/api'
-import { validateUrl } from '@shared/lib'
 import { useQuery } from '@tanstack/react-query'
+import { retrieve } from '../helpers'
 
 export const useRetrieve = (path: string) => {
 	const { data } = useQuery({
 		queryKey: ['retrieve'],
-		queryFn: async () => {
-			const response = await storageService.retrieve(path)
-			return validateUrl(response.data.publicUrl)
-		},
+		queryFn: () => retrieve(path),
 		gcTime: 0
 	})
 
