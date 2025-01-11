@@ -11,7 +11,8 @@ export interface UploadResponse {
 	error: Error | null
 }
 export interface RetrieveResponse {
-	data: { publicUrl: string }
+	data: { publicUrl: string } | null
+	error: Error | null
 }
 export interface MoveResponse {
 	data: { message: string } | null
