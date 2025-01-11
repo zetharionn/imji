@@ -21,7 +21,10 @@ export class StorageService implements IStorageService {
 		const { data } = await this.supabaseClient.storage
 			.from(this.bucket)
 			.getPublicUrl(path)
-		return { data }
+		const response = await fetch(data.publicUrl, { method: 'HEAD' })
+		return response.ok
+			? { data: data, error: null }
+			: { data: null, error: Error('Not found') }
 	}
 
 	async move(path: string, newPath: string) {
