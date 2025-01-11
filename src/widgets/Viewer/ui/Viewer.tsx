@@ -9,7 +9,7 @@ export const Viewer: FC<IViewer> = ({ path }) => {
 
 	return (
 		<div>
-			{data?.data?.publicUrl && <ImageCard url={data?.data?.publicUrl} />}
+			{data && <ImageCard url={data} />}
 			{status === 'pending' && <Spinner size='lg' />}
 			<Alert
 				isVisible={status === 'error'}
