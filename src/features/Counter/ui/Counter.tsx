@@ -1,9 +1,8 @@
 import { useCounter } from '../lib'
 import { Image } from '@nextui-org/react'
 import { AnimatedValue, image } from '@shared/ui'
-import { memo } from 'react'
 
-export const Counter = memo(() => {
+export const Counter = () => {
 	const { amount } = useCounter()
 
 	return (
@@ -15,4 +14,4 @@ export const Counter = memo(() => {
 			</p>
 		</div>
 	)
-})
+}
