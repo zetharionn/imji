@@ -21,7 +21,9 @@ export const Counter = () => {
 
 	return (
 		<div>
-			<motion.p className='text-xl font-medium'>{value} Images Hosted</motion.p>
+			<motion.p className='text-sm text-gray-300 font-medium'>
+				{value} Images Hosted
+			</motion.p>
 		</div>
 	)
 }
