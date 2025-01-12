@@ -1,6 +1,8 @@
 import { animate, motion, useMotionValue } from 'framer-motion'
 import { useCounter } from '../lib'
 import { useEffect, useState } from 'react'
+import { Image } from '@nextui-org/react'
+import { image } from '@shared/ui'
 
 export const Counter = () => {
 	const { amount } = useCounter()
@@ -20,7 +22,8 @@ export const Counter = () => {
 	}, [motionAmount, amount])
 
 	return (
-		<div>
+		<div className='flex flex-row items-center'>
+			<Image src={image} />
 			<motion.p className='text-sm text-gray-300 font-medium'>
 				{value} Images Hosted
 			</motion.p>
