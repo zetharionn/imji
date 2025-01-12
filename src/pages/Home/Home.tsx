@@ -1,3 +1,4 @@
+import { Counter } from '@features/Counter'
 import { Uploader } from '@widgets/Uploader'
 
 const Home = () => {
@@ -8,9 +9,8 @@ const Home = () => {
 					Save and share your images
 				</h1>
 			</div>
-			<div>
-				<Uploader />
-			</div>
+			<Uploader />
+			<Counter />
 		</div>
 	)
 }
