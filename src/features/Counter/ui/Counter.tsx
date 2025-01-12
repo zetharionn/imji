@@ -12,7 +12,7 @@ export const Counter = () => {
 	useEffect(() => {
 		const animation = animate(motionAmount, amount, {
 			duration: 3,
-			ease: 'easeInOut',
+			ease: 'easeOut',
 			onUpdate: value => {
 				setValue(Math.round(value))
 			}
