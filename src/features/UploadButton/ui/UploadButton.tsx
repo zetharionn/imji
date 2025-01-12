@@ -8,6 +8,7 @@ export const UploadButton = () => {
 		<FileButton
 			onFile={file => mutation.mutate(file)}
 			isLoading={mutation.isPending}
+			accept='image/*'
 		>
 			Choose file
 		</FileButton>
