@@ -11,6 +11,7 @@ import type { IFileButton } from './FileButton.types'
 export const FileButton: FC<PropsWithChildren<IFileButton>> = memo(
 	({
 		children,
+		className,
 		variant = 'solid',
 		color = 'default',
 		size = 'md',
@@ -19,7 +20,7 @@ export const FileButton: FC<PropsWithChildren<IFileButton>> = memo(
 		isLoading = false,
 		onPress = () => {},
 		onFile = () => {},
-		accept = ''
+		accept
 	}) => {
 		const ref = useRef<HTMLInputElement | null>(null)
 		const change = (event: ChangeEvent<HTMLInputElement>) => {
@@ -34,6 +35,7 @@ export const FileButton: FC<PropsWithChildren<IFileButton>> = memo(
 		return (
 			<>
 				<Button
+					className={className}
 					variant={variant}
 					color={color}
 					size={size}
