@@ -1,4 +1,5 @@
 export interface IFileButton {
+	className?: string
 	variant?:
 		| 'solid'
 		| 'bordered'
