@@ -1,5 +1,6 @@
 import { ROUTES } from '@shared/lib'
 import { getRouteApi } from '@tanstack/react-router'
+import { Toolkit } from '@widgets/Toolkit'
 import { Viewer } from '@widgets/Viewer'
 
 const imagesRoute = getRouteApi(`${ROUTES.IMAGES}/$path`)
@@ -10,6 +11,7 @@ const Images = () => {
 	return (
 		<div className='h-[80vh] flex text-center items-center justify-center'>
 			<Viewer path={path} />
+			<Toolkit />
 		</div>
 	)
 }
