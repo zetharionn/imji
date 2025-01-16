@@ -8,13 +8,13 @@ export const Uploader = () => {
 	const { data, error, status } = useUploadState()
 
 	return (
-		<div className='flex flex-col text-center items-center justify-center gap-4'>
+		<div className='flex flex-col w-96 text-center items-center gap-4'>
 			<div className='flex flex-col w-full gap-3'>
 				<UploadZone />
 				<Divider />
 				<UploadButton />
 			</div>
-			<div className='flex flex-col w-full gap-3'>
+			<div className='flex flex-col gap-3'>
 				<Alert
 					isVisible={status === 'success'}
 					color='success'
