@@ -1,2 +1,2 @@
-export * from "./Storage.service"
-export * from "./Storage.types"
+export * from './Storage.service'
+export * from './Storage.types'
