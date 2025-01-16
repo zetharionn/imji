@@ -1,3 +1,5 @@
+import type { PressEvent } from '../lib'
+
 export interface IFileButton {
 	className?: string
 	variant?:
@@ -13,7 +15,7 @@ export interface IFileButton {
 	radius?: 'none' | 'sm' | 'md' | 'lg' | 'full'
 	isDisabled?: boolean
 	isLoading?: boolean
-	onPress?: () => void
+	onClick?: (event: PressEvent) => void
 	onFile?: (file: File) => void
 	accept?: string
 }
