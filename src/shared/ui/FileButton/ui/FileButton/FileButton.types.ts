@@ -1,4 +1,4 @@
-import type { PressEvent } from '../lib'
+import type { PressEvent } from '../../lib'
 
 export interface IFileButton {
 	className?: string
