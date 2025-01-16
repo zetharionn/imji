@@ -1,6 +1,6 @@
-import { useCounter } from '../lib'
 import { Image } from '@nextui-org/react'
 import { AnimatedValue, image } from '@shared/ui'
+import { useCounter } from '../lib'
 
 export const Counter = () => {
 	const { amount } = useCounter()
