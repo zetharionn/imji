@@ -1,5 +1,5 @@
 import { useQuery } from '@tanstack/react-query'
-import { list } from '../helpers'
+import { list } from '../../helpers'
 
 export const useCounter = () => {
 	const query = useQuery({
