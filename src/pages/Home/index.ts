@@ -1,2 +1,1 @@
-export * from './Home'
-export * from './Home.route'
+export * from './ui'
