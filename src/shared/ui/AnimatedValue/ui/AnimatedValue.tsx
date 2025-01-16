@@ -1,6 +1,6 @@
-import { memo, useEffect, useState, type FC } from 'react'
-import type { IAnimatedValue } from './AnimatedValue.types'
 import { animate, motion, useMotionValue } from 'framer-motion'
+import { type FC, memo, useEffect, useState } from 'react'
+import type { IAnimatedValue } from './AnimatedValue.types'
 
 export const AnimatedValue: FC<IAnimatedValue> = memo(
 	({ value, initial = 0, duration = 5, ease = 'linear' }) => {

@@ -1,6 +1,6 @@
+import { Spinner } from '@nextui-org/react'
 import type { DragEvent, FC, PropsWithChildren } from 'react'
 import type { IDropzone } from './Dropzone.types'
-import { Spinner } from '@nextui-org/react'
 
 export const Dropzone: FC<PropsWithChildren<IDropzone>> = ({
 	children,
