@@ -3,7 +3,7 @@ import type {
 	FetchParameters,
 	IStorageService,
 	SearchOptions
-} from './storage.types'
+} from './Storage.types'
 
 export class StorageService implements IStorageService {
 	private supabaseClient: SupabaseClient
