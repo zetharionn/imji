@@ -1,5 +1,5 @@
 import { Counter } from '@features/Counter'
-import { Image } from '@nextui-org/react'
+import { Image } from '@heroui/react'
 import { bolt } from '@shared/ui'
 import { Uploader } from '@widgets/Uploader'
 
