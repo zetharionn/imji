@@ -1,4 +1,4 @@
-import { Button } from '@nextui-org/react'
+import { Button } from '@heroui/react'
 import { type FC, type PropsWithChildren, memo } from 'react'
 import { useFileButton } from '../../lib'
 import type { IFileButton } from './FileButton.types'

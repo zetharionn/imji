@@ -1,4 +1,4 @@
-import { Image, Link, Navbar, NavbarBrand, NavbarItem } from '@nextui-org/react'
+import { Image, Link, Navbar, NavbarBrand, NavbarItem } from '@heroui/react'
 import { ROUTES } from '@shared/lib'
 
 export const Nav = () => {
