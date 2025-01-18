@@ -1,7 +1,8 @@
 import { useUploadState } from '@entities/image'
+import { PLATFORM } from '@entities/user'
 import { UploadButton } from '@features/UploadButton'
 import { UploadZone } from '@features/UploadZone'
-import { Alert, Divider, Link } from '@heroui/react'
+import { Alert, Link } from '@heroui/react'
 import { ROUTES } from '@shared/lib'
 
 export const Uploader = () => {
@@ -10,8 +11,7 @@ export const Uploader = () => {
 	return (
 		<div className='flex flex-col w-96 text-center items-center gap-4'>
 			<div className='flex flex-col w-full gap-3'>
-				<UploadZone />
-				<Divider />
+				{PLATFORM === 'Desktop' && <UploadZone />}
 				<UploadButton />
 			</div>
 			<div className='flex flex-col gap-3'>
