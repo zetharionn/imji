@@ -6,9 +6,9 @@ export const Counter = () => {
 	const { amount } = useCounter()
 
 	return (
-		<div className='flex flex-row items-center'>
+		<div className='flex items-center'>
 			<Image src={image} />
-			<p>
+			<p className='text-sm text-neutral-200 font-medium'>
 				<AnimatedValue value={amount} duration={3} ease='easeOut' />
 				<span> Images Hosted</span>
 			</p>
