@@ -16,22 +16,23 @@ export const Uploader = () => {
 			</div>
 
 			<div className='flex flex-col w-full gap-3'>
-				<Alert
-					isVisible={status === 'success'}
-					color='success'
-					title='Success'
-					description={
-						<Link color='success' href={`${ROUTES.IMAGES}/${data?.data?.path}`}>
-							{data?.data?.path}
-						</Link>
-					}
-				/>
-				<Alert
-					isVisible={status === 'error'}
-					color='danger'
-					title='Error'
-					description={error?.message}
-				/>
+				{status === 'success' && (
+					<Alert
+						color='success'
+						title='Success'
+						description={
+							<Link
+								color='success'
+								href={`${ROUTES.IMAGES}/${data?.data?.path}`}
+							>
+								{data?.data?.path}
+							</Link>
+						}
+					/>
+				)}
+				{status === 'error' && (
+					<Alert color='danger' title='Error' description={error?.message} />
+				)}
 			</div>
 		</div>
 	)
