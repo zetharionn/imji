@@ -9,12 +9,13 @@ export const Uploader = () => {
 	const { data, error, status } = useUploadState()
 
 	return (
-		<div className='flex flex-col w-96 text-center items-center gap-4'>
+		<div className='flex flex-col items-center w-[50vw] sm:w-[25vw] gap-5'>
 			<div className='flex flex-col w-full gap-3'>
 				{PLATFORM === 'Desktop' && <UploadZone />}
 				<UploadButton />
 			</div>
-			<div className='flex flex-col gap-3'>
+
+			<div className='flex flex-col w-full gap-3'>
 				<Alert
 					isVisible={status === 'success'}
 					color='success'
