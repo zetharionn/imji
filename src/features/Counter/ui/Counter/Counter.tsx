@@ -1,4 +1,4 @@
-import { Image } from '@nextui-org/react'
+import { Image } from '@heroui/react'
 import { AnimatedValue, image } from '@shared/ui'
 import { useCounter } from '../../lib'
 

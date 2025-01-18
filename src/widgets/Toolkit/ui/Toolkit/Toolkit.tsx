@@ -6,7 +6,7 @@ import {
 	DrawerHeader,
 	Image,
 	useDisclosure
-} from '@nextui-org/react'
+} from '@heroui/react'
 import { bolt } from '@shared/ui'
 
 export const Toolkit = () => {
