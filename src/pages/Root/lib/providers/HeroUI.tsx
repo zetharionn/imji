@@ -2,12 +2,12 @@ import { HeroUIProvider } from '@heroui/react'
 import { useRouter } from '@tanstack/react-router'
 import type { FC } from 'react'
 
-export const NextUI = (Component: FC) => () => {
+export const HeroUI = (Component: FC) => () => {
 	const router = useRouter()
 
 	return (
 		<HeroUIProvider
-			navigate={to => router.navigate({ to })}
+			navigate={(to, options) => router.navigate({ to, ...(options ?? {}) })}
 			useHref={to => router.buildLocation({ to }).href}
 		>
 			<Component />
