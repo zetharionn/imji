@@ -11,7 +11,7 @@ export const ImageCard: FC<IImageCard> = memo(({ url }) => {
 					src={url}
 					width={1000}
 					height={500}
-					className='object-cover w-full h-full rounded-t-lg'
+					className='object-contain w-full h-full rounded-t-lg'
 				/>
 			</CardBody>
 		</Card>

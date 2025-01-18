@@ -5,22 +5,24 @@ import { Uploader } from '@widgets/Uploader'
 
 const Home = () => {
 	return (
-		<div className='h-[80vh] flex flex-col text-center items-center justify-center gap-4'>
-			<div>
-				<h1 className='text-5xl font-bold bg-gradient-to-r from-white to-gray-400 bg-clip-text text-transparent'>
-					Save and share your images
-				</h1>
-				<p className='text-lg text-gray-200'>
+		<div className='h-[calc(100vh-4rem)] flex flex-col items-center justify-center text-center gap-5'>
+			<div className='flex flex-col flex-wrap text-center gap-1'>
+				<h1 className='text-5xl font-bold'>Save and share your images</h1>
+				<p className='text-sm text-neutral-400'>
 					An open source service for saving and sharing images with anyone,
 					anytime.
 				</p>
 			</div>
+
 			<Uploader />
-			<div className='flex flex-row gap-5'>
+
+			<div className='flex flex-wrap gap-5'>
 				<Counter />
-				<div className='flex flex-row items-center'>
+				<div className='flex items-center'>
 					<Image src={bolt} />
-					<p className='text-sm text-gray-300 font-medium'>Blazing fast CDN</p>
+					<p className='text-sm text-neutral-200 font-medium'>
+						<span>Blazing fast CDN</span>
+					</p>
 				</div>
 			</div>
 		</div>
