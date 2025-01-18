@@ -19,6 +19,10 @@ export const AnimatedValue: FC<IAnimatedValue> = memo(
 			return () => animation.stop()
 		}, [motionValue, value, duration, ease])
 
-		return <motion.span>{displayValue}</motion.span>
+		return (
+			<motion.span className='text-sm text-neutral-200 font-medium'>
+				{displayValue}
+			</motion.span>
+		)
 	}
 )

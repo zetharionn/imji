@@ -2,7 +2,7 @@ import { Spinner } from '@heroui/react'
 
 export const Loader = () => {
 	return (
-		<div className='h-[80vh] flex flex-col text-center items-center justify-center gap-4'>
+		<div className='h-[calc(100vh-4rem)] flex flex-col items-center justify-center text-center gap-5'>
 			<div>
 				<Spinner size='lg' />
 			</div>
