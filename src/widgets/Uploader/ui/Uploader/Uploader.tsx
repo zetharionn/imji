@@ -1,7 +1,7 @@
 import { useUploadState } from '@entities/image'
 import { UploadButton } from '@features/UploadButton'
 import { UploadZone } from '@features/UploadZone'
-import { Alert, Divider, Link } from '@nextui-org/react'
+import { Alert, Divider, Link } from '@heroui/react'
 import { ROUTES } from '@shared/lib'
 
 export const Uploader = () => {

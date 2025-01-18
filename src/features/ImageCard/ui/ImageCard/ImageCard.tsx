@@ -1,4 +1,4 @@
-import { Card, CardBody, Image } from '@nextui-org/react'
+import { Card, CardBody, Image } from '@heroui/react'
 import { type FC, memo } from 'react'
 import type { IImageCard } from './ImageCard.types'
 
