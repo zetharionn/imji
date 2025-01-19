@@ -1,7 +1,7 @@
+import type { ReactNode } from 'react'
 import type { PressEvent } from '../../lib'
 
 export interface IFileButton {
-	className?: string
 	variant?:
 		| 'solid'
 		| 'bordered'
@@ -13,8 +13,13 @@ export interface IFileButton {
 	color?: 'default' | 'primary' | 'secondary' | 'success' | 'warning' | 'danger'
 	size?: 'sm' | 'md' | 'lg'
 	radius?: 'none' | 'sm' | 'md' | 'lg' | 'full'
+	startContent?: ReactNode
+	endContent?: ReactNode
+	fullWidth?: boolean
+	isIconOnly?: boolean
 	isDisabled?: boolean
 	isLoading?: boolean
+	className?: string
 	onClick?: (event: PressEvent) => void
 	onFile?: (file: File) => void
 	accept?: string
