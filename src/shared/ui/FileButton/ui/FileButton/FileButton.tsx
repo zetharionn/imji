@@ -6,13 +6,17 @@ import type { IFileButton } from './FileButton.types'
 export const FileButton: FC<PropsWithChildren<IFileButton>> = memo(
 	({
 		children,
-		className,
 		variant = 'solid',
 		color = 'default',
 		size = 'md',
 		radius = 'md',
+		startContent = null,
+		endContent = null,
+		fullWidth = false,
+		isIconOnly = false,
 		isDisabled = false,
 		isLoading = false,
+		className,
 		onClick = () => {},
 		onFile = () => {},
 		accept
@@ -22,13 +26,17 @@ export const FileButton: FC<PropsWithChildren<IFileButton>> = memo(
 		return (
 			<>
 				<Button
-					className={className}
 					variant={variant}
 					color={color}
 					size={size}
 					radius={radius}
-					isLoading={isLoading}
+					startContent={!isLoading && startContent}
+					endContent={!isLoading && endContent}
+					fullWidth={fullWidth}
+					isIconOnly={isIconOnly}
 					isDisabled={isDisabled}
+					isLoading={isLoading}
+					className={className}
 					onPress={event => onPress(event, onClick)}
 				>
 					{children}
