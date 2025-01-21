@@ -1,5 +1,6 @@
 import { useUpload } from '@entities/image'
-import { FileButton } from '@shared/ui'
+import { Image } from '@heroui/react'
+import { FileButton, upload } from '@shared/ui'
 
 export const UploadButton = () => {
 	const mutation = useUpload()
@@ -9,6 +10,7 @@ export const UploadButton = () => {
 			onFile={file => mutation.mutate(file)}
 			isLoading={mutation.isPending}
 			accept='image/*'
+			startContent={<Image src={upload} />}
 		>
 			Choose file
 		</FileButton>

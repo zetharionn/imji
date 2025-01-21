@@ -18,7 +18,7 @@ export const Toolkit = () => {
 				isIconOnly
 				size='lg'
 				onPress={onOpen}
-				className='absolute bottom-10 right-10'
+				className='absolute bottom-10 right-10 z-10'
 			>
 				<Image src={bolt} />
 			</Button>
