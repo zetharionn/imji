@@ -1,6 +1,6 @@
+@use './globals.scss';
+@use './reset.scss';
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-@import url('./globals.scss');
-@import url('./reset.scss');
