@@ -1,5 +1,5 @@
 import { useQuery } from '@tanstack/react-query'
-import { retrieve } from '../../helpers'
+import { retrieve } from '../helpers'
 
 export const useRetrieve = (path: string) =>
 	useQuery({
