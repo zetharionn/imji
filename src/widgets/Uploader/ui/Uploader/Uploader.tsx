@@ -1,7 +1,7 @@
 import { useUploadState } from '@entities/image'
 import { PLATFORM } from '@entities/user'
-import { UploadButton } from '@features/UploadButton'
-import { UploadZone } from '@features/UploadZone'
+import { UploadButton } from '@features/upload-button'
+import { UploadZone } from '@features/upload-zone'
 import { Alert, Link } from '@heroui/react'
 import { ROUTES } from '@shared/lib'
 

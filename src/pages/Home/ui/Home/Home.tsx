@@ -1,4 +1,4 @@
-import { Counter } from '@features/Counter'
+import { Counter } from '@features/counter'
 import { Image } from '@heroui/react'
 import { bolt } from '@shared/ui'
 import { Uploader } from '@widgets/Uploader'
