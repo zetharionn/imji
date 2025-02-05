@@ -1,7 +1,7 @@
 import { ROUTES } from '@shared/lib'
 import { getRouteApi } from '@tanstack/react-router'
-import { Toolkit } from '@widgets/Toolkit'
-import { Viewer } from '@widgets/Viewer'
+import { Toolkit } from '@widgets/toolkit'
+import { Viewer } from '@widgets/viewer'
 
 const imagesRoute = getRouteApi(`${ROUTES.IMAGES}/$path`)
 
