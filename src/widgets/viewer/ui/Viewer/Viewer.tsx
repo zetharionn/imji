@@ -1,5 +1,5 @@
 import { useRetrieve } from '@entities/image'
-import { ImageCard } from '@features/ImageCard'
+import { ImageCard } from '@features/image-card'
 import { Alert, Spinner } from '@heroui/react'
 import type { FC } from 'react'
 import type { IViewer } from './Viewer.types'
