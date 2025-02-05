@@ -1,2 +1,2 @@
-export * from './providers'
 export * from './hocs'
+export * from './providers'
