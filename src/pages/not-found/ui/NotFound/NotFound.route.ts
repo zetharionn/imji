@@ -1,4 +1,4 @@
-import { rootRoute } from '@pages/_root'
+import { rootRoute } from '@pages/root'
 import { NotFoundRoute } from '@tanstack/react-router'
 import NotFound from './NotFound'
 
