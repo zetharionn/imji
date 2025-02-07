@@ -1,4 +1,4 @@
-import { imjiMark } from '@shared/ui'
+import { favicon } from '@shared/ui'
 
 export const Head = () => {
 	return (
@@ -25,7 +25,7 @@ export const Head = () => {
 				name='twitter:description'
 				content='An open source service for saving and sharing images with anyone, anytime.'
 			/>
-			<link rel='icon' type='image/svg+xml' href={imjiMark} />
+			<link rel='icon' type='image/svg+xml' sizes='64x64' href={favicon} />
 			<link rel='canonical' href='https://imji.vercel.app/' />
 			<link rel='alternate' href='https://imji-zetharion.vercel.app/' />
 		</>
