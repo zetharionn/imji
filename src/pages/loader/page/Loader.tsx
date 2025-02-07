@@ -1,6 +1,6 @@
 import { Spinner } from '@heroui/react'
 
-export const Loader = () => {
+const Loader = () => {
 	return (
 		<div className='h-[calc(100vh-4rem)] flex flex-col items-center justify-center text-center gap-5'>
 			<div>
@@ -9,3 +9,5 @@ export const Loader = () => {
 		</div>
 	)
 }
+
+export default Loader
