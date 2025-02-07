@@ -1,15 +1,14 @@
-import { Loader } from '@pages/loader'
+import Loader from '@pages/loader'
 import { rootRoute } from '@pages/root'
 import { ROUTES, withSuspense } from '@shared/lib'
 import { createRoute } from '@tanstack/react-router'
 import { lazy } from 'react'
 
-export const imagesRoute = createRoute({
+export const homeRoute = createRoute({
 	getParentRoute: () => rootRoute,
-	path: `${ROUTES.IMAGES}/$path`,
+	path: ROUTES.HOME,
 	component: withSuspense(
-		lazy(async () => import('./Images')),
+		lazy(async () => import('./Home')),
 		Loader
-	),
-	loader: ({ params: { path } }) => path
+	)
 })

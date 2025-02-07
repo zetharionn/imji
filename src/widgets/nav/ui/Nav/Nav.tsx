@@ -1,5 +1,6 @@
 import { Image, Link, Navbar, NavbarBrand, NavbarItem } from '@heroui/react'
 import { ROUTES } from '@shared/lib'
+import { imjiMark } from '@shared/ui'
 
 export const Nav = () => {
 	return (
@@ -10,7 +11,7 @@ export const Nav = () => {
 					href={ROUTES.HOME}
 					className='flex flex-row gap-2'
 				>
-					<Image alt='Imji' src='/imji-mark.svg' width={50} height={50} />
+					<Image src={imjiMark} width={50} height={50} />
 					<h1 className='md:text-2xl lg:text-3xl font-bold'>Imji</h1>
 				</Link>
 			</NavbarBrand>
