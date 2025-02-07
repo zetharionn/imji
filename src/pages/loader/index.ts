@@ -1,1 +1,2 @@
-export * from './ui'
+export * from './page'
+export { default } from './page'
