@@ -1,7 +1,7 @@
 import { Outlet } from '@tanstack/react-router'
+import { Head } from '@widgets/head'
 import { Nav } from '@widgets/nav'
 import { Devtools, withProviders } from '../lib'
-import { Head } from '@widgets/head'
 
 const Root = () => {
 	return (
