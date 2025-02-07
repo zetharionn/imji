@@ -7,10 +7,8 @@ import { imjiMark } from '@shared/ui'
 export const App = () => {
 	return (
 		<>
-			<head>
-				<link rel='icon' type='image/svg+xml' href={imjiMark} />
-				<title>Imji</title>
-			</head>
+			<link rel='icon' type='image/svg+xml' href={imjiMark} />
+			<title>Imji</title>
 			<Analytics />
 			<Routing />
 			<SpeedInsights />
