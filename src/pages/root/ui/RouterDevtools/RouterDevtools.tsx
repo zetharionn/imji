@@ -1,4 +1,4 @@
-import { lazy, memo, Suspense } from 'react'
+import { Suspense, lazy, memo } from 'react'
 
 export const RouterDevtools = memo(() => {
 	const Devtools = import.meta.env.DEV
