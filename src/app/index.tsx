@@ -6,7 +6,6 @@ import './styles'
 export const App = () => {
 	return (
 		<>
-			<title>Imji</title>
 			<Analytics />
 			<Routing />
 			<SpeedInsights />
