@@ -3,7 +3,7 @@ import { PLATFORM } from '@entities/user'
 import { UploadButton } from '@features/upload-button'
 import { UploadZone } from '@features/upload-zone'
 import { Alert, Link } from '@heroui/react'
-import { ROUTES } from '@shared/lib'
+import { ROUTES } from '@shared/constants'
 
 export const Uploader = () => {
 	const { data, error, status } = useUploadState()

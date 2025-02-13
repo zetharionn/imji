@@ -1,5 +1,5 @@
 import { Image, Link, Navbar, NavbarBrand, NavbarItem } from '@heroui/react'
-import { ROUTES } from '@shared/lib'
+import { ROUTES } from '@shared/constants'
 import { imjiMark } from '@shared/ui'
 
 export const Nav = () => {

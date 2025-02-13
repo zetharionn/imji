@@ -1,4 +1,4 @@
-import { ROUTES } from '@shared/lib'
+import { ROUTES } from '@shared/constants'
 import { getRouteApi } from '@tanstack/react-router'
 import { Toolkit } from '@widgets/toolkit'
 import { Viewer } from '@widgets/viewer'
