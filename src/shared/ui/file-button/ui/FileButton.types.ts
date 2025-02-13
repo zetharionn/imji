@@ -1,5 +1,5 @@
 import type { ReactNode } from 'react'
-import type { PressEvent } from '../../lib'
+import type { PressEvent } from '../hooks'
 
 export interface IFileButton {
 	variant?:
