@@ -1,6 +1,6 @@
 import { Spinner } from '@heroui/react'
 import type { FC, PropsWithChildren } from 'react'
-import { useDropzone } from '../../lib'
+import { useDropzone } from '../hooks'
 import type { IDropzone } from './Dropzone.types'
 
 export const Dropzone: FC<PropsWithChildren<IDropzone>> = ({
