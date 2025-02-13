@@ -1,7 +1,7 @@
 
 <div align="center">
 
-<h3> <img src="https://github.com/zetharionn/imji/blob/main/public/imji-mark.svg" align="center" height="25" /> Imji</h3>
+<h3> <img src="https://github.com/zetharionn/imji/blob/main/.github/assets/imji-mark.svg" align="center" height="25" /> Imji</h3>
 
 <p>Save and share your images</p>
 
