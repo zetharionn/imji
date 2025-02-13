@@ -1,7 +1,7 @@
 import Loader from '@pages/loader'
 import { rootRoute } from '@pages/root'
 import { ROUTES } from '@shared/constants'
-import { withSuspense } from '@shared/lib'
+import { withSuspense } from '@shared/hocs'
 import { createRoute } from '@tanstack/react-router'
 import { lazy } from 'react'
 
