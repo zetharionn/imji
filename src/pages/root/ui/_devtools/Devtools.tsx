@@ -1,6 +1,6 @@
 import { memo } from 'react'
-import { QueryDevtools } from '../QueryDevtools'
-import { RouterDevtools } from '../RouterDevtools'
+import { QueryDevtools } from '../query-devtools'
+import { RouterDevtools } from '../router-devtools'
 
 export const Devtools = memo(() => {
 	return (
