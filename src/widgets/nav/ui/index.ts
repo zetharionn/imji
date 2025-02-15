@@ -1,1 +1,1 @@
-export * from './_nav'
+export * from './nav'
