@@ -1,3 +1,3 @@
-export * from './devtools'
-export * from './query-devtools'
-export * from './router-devtools'
+export * from './Devtools'
+export * from './QueryDevtools'
+export * from './RouterDevtools'
