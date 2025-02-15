@@ -1,6 +1,6 @@
 import { Image } from '@heroui/react'
 import { AnimatedValue, image } from '@shared/ui'
-import { useCounter } from '../../lib'
+import { useCounter } from '../../hooks'
 
 export const Counter = () => {
 	const { amount } = useCounter()
