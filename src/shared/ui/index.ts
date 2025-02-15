@@ -1,4 +1,4 @@
-export * from './FileButton'
+export * from './file-button'
 export * from './assets'
-export * from './AnimatedValue'
-export * from './Dropzone'
+export * from './animated-value'
+export * from './dropzone'

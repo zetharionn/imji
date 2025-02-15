@@ -1,4 +1,4 @@
-import { BUCKET } from '@shared/lib'
+import { BUCKET } from '@shared/constants'
 import { createClient } from '@supabase/supabase-js'
 import { StorageService } from './services'
 
