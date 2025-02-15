@@ -1,4 +1,5 @@
-export * from './lib'
+export * from './hocs'
+export * from './providers'
+export * from './ui'
 export * from './page'
 export { default } from './page'
-export * from './ui'

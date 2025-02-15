@@ -1,1 +1,2 @@
-export * from './schemes'
+export * from './image.schema'
+export * from './url.schema'
