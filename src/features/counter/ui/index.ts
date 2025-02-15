@@ -1,1 +1,1 @@
-export * from './_counter'
+export * from './counter'
