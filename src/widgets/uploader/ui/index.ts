@@ -1,1 +1,1 @@
-export * from './Uploader'
+export * from './_uploader'
