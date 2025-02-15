@@ -1,1 +1,2 @@
-export * from './viewer'
+export * from './Viewer'
+export * from './Viewer.types'
