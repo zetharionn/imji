@@ -1,1 +1,2 @@
-export * from './image-card'
+export * from './ImageCard'
+export * from './ImageCard.types'
