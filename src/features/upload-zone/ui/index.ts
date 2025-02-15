@@ -1,1 +1,1 @@
-export * from './UploadZone'
+export * from './upload-zone'
