@@ -1,1 +1,1 @@
-export * from './_head'
+export * from './head'
