@@ -1,1 +1,1 @@
-export * from './_storage'
+export * from './storage'
