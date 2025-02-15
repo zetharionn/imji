@@ -1,1 +1,1 @@
-export * from './upload-button'
+export * from './UploadButton'
