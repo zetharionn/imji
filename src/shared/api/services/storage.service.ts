@@ -6,8 +6,8 @@ import type {
 } from './storage.types'
 
 export class StorageService implements IStorageService {
-	private supabaseClient: SupabaseClient
-	private bucket: string
+	private readonly supabaseClient: SupabaseClient
+	private readonly bucket: string
 
 	constructor(supabaseClient: SupabaseClient, bucket: string) {
 		this.supabaseClient = supabaseClient
