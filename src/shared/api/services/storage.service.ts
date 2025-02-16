@@ -18,6 +18,7 @@ export class StorageService implements IStorageService {
 		const { data, error } = await this.supabaseClient.storage
 			.from(this.bucket)
 			.upload(path, file)
+
 		return { data, error }
 	}
 
@@ -26,6 +27,7 @@ export class StorageService implements IStorageService {
 			.from(this.bucket)
 			.getPublicUrl(path)
 		const response = await fetch(data.publicUrl, { method: 'HEAD' })
+
 		return response.ok
 			? { data: data, error: null }
 			: { data: null, error: Error('Not found') }
@@ -35,6 +37,7 @@ export class StorageService implements IStorageService {
 		const { data, error } = await this.supabaseClient.storage
 			.from(this.bucket)
 			.move(path, newPath)
+
 		return { data, error }
 	}
 
@@ -42,6 +45,7 @@ export class StorageService implements IStorageService {
 		const { error } = await this.supabaseClient.storage
 			.from(this.bucket)
 			.remove(paths)
+
 		return { error }
 	}
 
@@ -49,6 +53,7 @@ export class StorageService implements IStorageService {
 		const { data, error } = await this.supabaseClient.storage
 			.from(this.bucket)
 			.download(path)
+
 		return { data, error }
 	}
 
@@ -60,6 +65,7 @@ export class StorageService implements IStorageService {
 		const { data, error } = await this.supabaseClient.storage
 			.from(this.bucket)
 			.list(path, options, parameters)
+
 		return { data, error }
 	}
 }
