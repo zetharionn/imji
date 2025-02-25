@@ -6,7 +6,7 @@ const Loader = () => {
 			<title>Imji | Loading</title>
 			<div className='h-[calc(100vh-4rem)] flex flex-col items-center justify-center text-center gap-5'>
 				<div>
-					<Spinner size='lg' />
+					<Spinner size='lg' variant='wave' label='Waving...' />
 				</div>
 			</div>
 		</>

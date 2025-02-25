@@ -45,9 +45,6 @@
 		"node": "22.x"
 	},
 	"pnpm": {
-		"onlyBuiltDependencies": [
-			"@heroui/shared-utils",
-			"esbuild"
-		]
+		"onlyBuiltDependencies": ["@heroui/shared-utils", "esbuild"]
 	}
 }

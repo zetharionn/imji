@@ -7,7 +7,7 @@ import {
 	Image,
 	useDisclosure
 } from '@heroui/react'
-import { bolt } from '@shared/ui'
+import { bolt, darkBolt } from '@shared/ui'
 
 export const Toolkit = () => {
 	const { isOpen, onOpen, onOpenChange } = useDisclosure()
@@ -20,7 +20,7 @@ export const Toolkit = () => {
 				onPress={onOpen}
 				className='absolute bottom-10 right-10 z-10'
 			>
-				<Image src={bolt} />
+				<Image src={darkBolt} />
 			</Button>
 			<Drawer isOpen={isOpen} onOpenChange={onOpenChange}>
 				<DrawerContent>
