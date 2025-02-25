@@ -1,4 +1,5 @@
 export { default as bolt } from './bolt.svg'
+export { default as darkBolt } from './dark-bolt.svg'
 export { default as favicon } from './favicon.svg'
 export { default as image } from './image.svg'
 export { default as imjiMark } from './imji-mark.svg'
