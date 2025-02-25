@@ -11,6 +11,7 @@ export const UploadButton = () => {
 			isLoading={mutation.isPending}
 			accept='image/*'
 			startContent={<Image src={upload} />}
+			variant='shadow'
 		>
 			Choose file
 		</FileButton>
