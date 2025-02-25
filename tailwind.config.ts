@@ -99,8 +99,8 @@ export default {
 							foreground: '#000',
 							DEFAULT: '#ff353c'
 						},
-						background: '#0A0A0A',
-						foreground: '#FFFFFF',
+						background: '#0a0a0a',
+						foreground: '#ffffff',
 						content1: {
 							DEFAULT: '#18181b',
 							foreground: '#fff'
@@ -117,8 +117,8 @@ export default {
 							DEFAULT: '#55555d',
 							foreground: '#fff'
 						},
-						focus: '#F3F3F3',
-						overlay: '#FFFFFF'
+						focus: '#f3f3f3',
+						overlay: '#ffffff'
 					}
 				}
 			},
