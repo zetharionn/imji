@@ -1,6 +1,6 @@
+import { Alert } from '@heroui/react'
 import type { FC } from 'react'
 import type { IFallback } from './Fallback.types'
-import { Alert } from '@heroui/react'
 
 const Fallback: FC<IFallback> = ({ error }) => {
 	return (
