@@ -14,14 +14,14 @@ export class ErrorBoundary extends Component<
 	}
 
 	static getDerivedStateFromError(error: Error) {
-		return { hasError: true, error: error }
+		return { hasError: true, error }
 	}
 
 	render() {
-		if (this.state.hasError) {
-			return <this.props.ErrorComponent />
+		if (this.state.hasError && this.state.error) {
+			return <this.props.errorComponent error={this.state.error} />
 		}
 
-		return this.props.children
+		return <>{this.props.children}</>
 	}
 }
