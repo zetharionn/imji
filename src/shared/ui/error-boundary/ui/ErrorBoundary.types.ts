@@ -1,12 +1,12 @@
 import type { FC, ReactNode } from 'react'
 
-export interface IErrorComponent {
+export interface IFallback {
 	error: Error
 }
 
 export interface ErrorBoundaryProps {
 	children: ReactNode
-	errorComponent: FC<IErrorComponent>
+	fallback: FC<IFallback>
 }
 
 export interface ErrorBoundaryState {
