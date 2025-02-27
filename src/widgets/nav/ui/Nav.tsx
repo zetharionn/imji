@@ -1,10 +1,17 @@
-import { Image, Link, Navbar, NavbarBrand, NavbarItem } from '@heroui/react'
+import {
+	Image,
+	Link,
+	Navbar,
+	NavbarBrand,
+	NavbarContent,
+	NavbarItem
+} from '@heroui/react'
 import { ROUTES } from '@shared/constants'
 import { imjiMark } from '@shared/ui'
 
 export const Nav = () => {
 	return (
-		<Navbar>
+		<Navbar isBordered maxWidth='full' className='absolute'>
 			<NavbarBrand>
 				<Link
 					color='foreground'
@@ -12,20 +19,21 @@ export const Nav = () => {
 					className='flex flex-row gap-2'
 				>
 					<Image src={imjiMark} width={50} height={50} />
-					<h1 className='md:text-2xl lg:text-3xl font-bold'>Imji</h1>
+					<h1 className='md:text-xl lg:text-2xl text-primary'>Imji</h1>
 				</Link>
 			</NavbarBrand>
-			<NavbarItem>
-				<Link
-					color='foreground'
-					isExternal
-					showAnchorIcon
-					href='https://github.com/zetharionn/imji'
-					className='md:text-xl lg:text-2xl font-bold'
-				>
-					GitHub
-				</Link>
-			</NavbarItem>
+			<NavbarContent justify='end'>
+				<NavbarItem>
+					<Link
+						color='foreground'
+						isExternal
+						href='https://github.com/zetharionn/imji'
+						className='md:text-xl lg:text-2xl text-secondary-50'
+					>
+						GitHub
+					</Link>
+				</NavbarItem>
+			</NavbarContent>
 		</Navbar>
 	)
 }
