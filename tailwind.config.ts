@@ -44,18 +44,18 @@ export default {
 							DEFAULT: '#f3f3f3'
 						},
 						secondary: {
-							'50': '#e4e4e4',
-							'100': '#bebebe',
-							'200': '#979797',
-							'300': '#717171',
-							'400': '#4b4b4b',
-							'500': '#252525',
-							'600': '#1f1f1f',
-							'700': '#181818',
-							'800': '#121212',
-							'900': '#0b0b0b',
-							foreground: '#fff',
-							DEFAULT: '#252525'
+							'50': '#efefef',
+							'100': '#d9d9d9',
+							'200': '#c3c3c3',
+							'300': '#acacac',
+							'400': '#969696',
+							'500': '#808080',
+							'600': '#6a6a6a',
+							'700': '#535353',
+							'800': '#3d3d3d',
+							'900': '#262626',
+							foreground: '#000',
+							DEFAULT: '#808080'
 						},
 						success: {
 							'50': '#e9f8e7',
@@ -117,8 +117,8 @@ export default {
 							DEFAULT: '#55555d',
 							foreground: '#fff'
 						},
-						focus: '#f3f3f3',
-						overlay: '#ffffff'
+						focus: '#0a0a0a',
+						overlay: '#0a0a0a'
 					}
 				}
 			},
