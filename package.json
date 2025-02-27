@@ -40,11 +40,14 @@
 		"vite": "^6.2.0",
 		"vitest": "^3.0.7"
 	},
-	"packageManager": "pnpm@10.5.1",
+	"packageManager": "pnpm@10.5.2",
 	"engines": {
 		"node": "22.x"
 	},
 	"pnpm": {
-		"onlyBuiltDependencies": ["@heroui/shared-utils", "esbuild"]
+		"onlyBuiltDependencies": [
+			"@heroui/shared-utils",
+			"esbuild"
+		]
 	}
 }
