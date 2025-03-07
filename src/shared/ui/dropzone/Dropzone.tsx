@@ -1,6 +1,5 @@
 import { Spinner } from '@heroui/react'
-import type { FC, PropsWithChildren } from 'react'
-import { useDropzone } from '../hooks'
+import type { DragEvent, FC, PropsWithChildren } from 'react'
 import type { IDropzone } from './Dropzone.types'
 
 export const Dropzone: FC<PropsWithChildren<IDropzone>> = ({
@@ -10,7 +9,20 @@ export const Dropzone: FC<PropsWithChildren<IDropzone>> = ({
 	onFile = () => {},
 	onHover = () => {}
 }) => {
-	const { onDrop, onDragOver } = useDropzone()
+	const onDrop = (
+		event: DragEvent<HTMLDivElement>,
+		callback: (file: File) => void
+	) => {
+		event.preventDefault()
+		callback(event.dataTransfer.files[0])
+	}
+	const onDragOver = (
+		event: DragEvent<HTMLDivElement>,
+		callback: () => void
+	) => {
+		event.preventDefault()
+		callback()
+	}
 
 	return (
 		<div

@@ -1,6 +1,11 @@
-import { Button } from '@heroui/react'
-import { type FC, type PropsWithChildren, memo } from 'react'
-import { useFileButton } from '../hooks'
+import { Button, type PressEvent } from '@heroui/react'
+import {
+	type ChangeEvent,
+	type FC,
+	type PropsWithChildren,
+	memo,
+	useRef
+} from 'react'
 import type { IFileButton } from './FileButton.types'
 
 export const FileButton: FC<PropsWithChildren<IFileButton>> = memo(
@@ -21,7 +26,20 @@ export const FileButton: FC<PropsWithChildren<IFileButton>> = memo(
 		onFile = () => {},
 		accept
 	}) => {
-		const { ref, onChange, onPress } = useFileButton()
+		const ref = useRef<HTMLInputElement>(null)
+		const onChange = (
+			event: ChangeEvent<HTMLInputElement>,
+			callback: (file: File) => void
+		) => {
+			event.currentTarget.files?.[0] && callback(event.currentTarget.files[0])
+		}
+		const onPress = (
+			event: PressEvent,
+			callback: (event: PressEvent) => void
+		) => {
+			ref.current?.click()
+			callback(event)
+		}
 
 		return (
 			<>
