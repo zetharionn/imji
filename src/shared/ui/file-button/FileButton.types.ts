@@ -1,5 +1,5 @@
+import type { PressEvent } from '@heroui/react'
 import type { ReactNode } from 'react'
-import type { PressEvent } from '../hooks'
 
 export interface IFileButton {
 	variant?:
