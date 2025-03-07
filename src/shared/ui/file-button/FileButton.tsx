@@ -4,6 +4,7 @@ import {
 	type FC,
 	type PropsWithChildren,
 	memo,
+	useCallback,
 	useRef
 } from 'react'
 import type { IFileButton } from './FileButton.types'
@@ -27,19 +28,22 @@ export const FileButton: FC<PropsWithChildren<IFileButton>> = memo(
 		accept
 	}) => {
 		const ref = useRef<HTMLInputElement>(null)
-		const onChange = (
-			event: ChangeEvent<HTMLInputElement>,
-			callback: (file: File) => void
-		) => {
-			event.currentTarget.files?.[0] && callback(event.currentTarget.files[0])
-		}
-		const onPress = (
-			event: PressEvent,
-			callback: (event: PressEvent) => void
-		) => {
-			ref.current?.click()
-			callback(event)
-		}
+		const onChange = useCallback(
+			(
+				event: ChangeEvent<HTMLInputElement>,
+				callback: (file: File) => void
+			) => {
+				event.currentTarget.files?.[0] && callback(event.currentTarget.files[0])
+			},
+			[]
+		)
+		const onPress = useCallback(
+			(event: PressEvent, callback: (event: PressEvent) => void) => {
+				ref.current?.click()
+				callback(event)
+			},
+			[]
+		)
 
 		return (
 			<>
