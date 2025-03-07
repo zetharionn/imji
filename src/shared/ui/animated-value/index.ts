@@ -1,1 +1,2 @@
-export * from './ui'
+export * from './AnimatedValue'
+export * from './AnimatedValue.types'
