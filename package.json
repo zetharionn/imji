@@ -41,12 +41,5 @@
 	"packageManager": "pnpm@10.6.1",
 	"engines": {
 		"node": "22.x"
-	},
-	"pnpm": {
-		"overrides": {
-			"@react-aria/i18n": "3.12.6",
-			"@react-aria/selection": "3.23.0",
-			"@react-aria/utils": "3.28.0"
-		}
 	}
 }
