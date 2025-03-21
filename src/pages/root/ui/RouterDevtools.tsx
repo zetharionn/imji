@@ -3,7 +3,7 @@ import { Suspense, lazy, memo } from 'react'
 export const RouterDevtools = memo(() => {
 	const Devtools = import.meta.env.DEV
 		? lazy(() =>
-				import('@tanstack/router-devtools').then(res => ({
+				import('@tanstack/react-router-devtools').then(res => ({
 					default: res.TanStackRouterDevtools
 				}))
 			)
