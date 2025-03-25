@@ -6,8 +6,8 @@
 	"license": "MIT",
 	"type": "module",
 	"scripts": {
-		"build": "tsc -b && vite build",
-		"dev": "vite",
+		"build": "rsbuild build",
+		"dev": "rsbuild dev",
 		"lint": "biome check --write",
 		"test": "vitest"
 	},
@@ -18,25 +18,25 @@
 		"@tanstack/react-router": "^1.114.27",
 		"@vercel/analytics": "^1.5.0",
 		"@vercel/speed-insights": "^1.2.0",
-		"framer-motion": "^12.5.0",
+		"framer-motion": "^12.6.0",
 		"react": "^19.0.0",
 		"react-dom": "^19.0.0",
 		"valibot": "1.0.0"
 	},
 	"devDependencies": {
 		"@biomejs/biome": "^1.9.4",
+		"@rsbuild/core": "^1.2.19",
+		"@rsbuild/plugin-react": "^1.1.1",
+		"@rsbuild/plugin-sass": "^1.2.2",
 		"@tanstack/react-query-devtools": "^5.69.0",
 		"@tanstack/react-router-devtools": "^1.114.27",
 		"@types/node": "^22.13.13",
 		"@types/react": "^19.0.12",
 		"@types/react-dom": "^19.0.4",
-		"@vitejs/plugin-react": "^4.3.4",
-		"autoprefixer": "^10.4.21",
 		"postcss": "^8.5.3",
 		"sass": "^1.86.0",
 		"tailwindcss": "^3.4.17",
-		"typescript": "~5.8.2",
-		"vite": "^6.2.3"
+		"typescript": "~5.8.2"
 	},
 	"packageManager": "pnpm@10.6.5",
 	"engines": {
