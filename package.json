@@ -9,7 +9,7 @@
 		"build": "rsbuild build",
 		"dev": "rsbuild dev",
 		"lint": "biome check --write",
-		"test": "vitest"
+		"preview": "rsbuild preview"
 	},
 	"dependencies": {
 		"@heroui/react": "2.7.5",
