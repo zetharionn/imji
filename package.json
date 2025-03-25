@@ -25,6 +25,9 @@
 	},
 	"devDependencies": {
 		"@biomejs/biome": "^1.9.4",
+		"@rsbuild/core": "^1.2.19",
+		"@rsbuild/plugin-react": "^1.1.1",
+		"@rsbuild/plugin-sass": "^1.2.2",
 		"@tanstack/react-query-devtools": "^5.69.0",
 		"@tanstack/react-router-devtools": "^1.114.27",
 		"@types/node": "^22.13.13",
