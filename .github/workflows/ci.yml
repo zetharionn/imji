@@ -6,6 +6,8 @@ jobs:
   lint:
     uses: ./.github/workflows/lint.yml
   codeql:
+    needs: lint
     uses: ./.github/workflows/codeql.yml
   build:
+    needs: codeql
     uses: ./.github/workflows/build.yml
