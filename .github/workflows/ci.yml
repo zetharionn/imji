@@ -5,7 +5,7 @@ permissions:
 jobs:
   lint:
     uses: ./.github/workflows/lint.yml
-  build:
-    uses: ./.github/workflows/build.yml
   codeql:
     uses: ./.github/workflows/codeql.yml
+  build:
+    uses: ./.github/workflows/build.yml
