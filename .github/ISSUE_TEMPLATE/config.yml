@@ -2,7 +2,10 @@ blank_issues_enabled: false
 contact_links:
   - name: Code of conduct
     url: https://github.com/zetharionn/imji/blob/main/.github/CODE_OF_CONDUCT.md
+    about: Code of conduct
   - name: Contributing
     url: https://github.com/zetharionn/imji/blob/main/.github/CONTRIBUTING.md
+    about: Contributing guideline
   - name: Security
     url: https://github.com/zetharionn/imji/blob/main/.github/SECURITY.md
+    about: Security policy
