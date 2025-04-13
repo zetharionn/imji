@@ -5,6 +5,7 @@ import './styles'
 export const metadata: Metadata = {
 	applicationName: 'Imji',
 	authors: [{ name: 'zetharionn' }],
+	title: 'Imji',
 	description:
 		'An open source service for saving and sharing images with anyone, anytime.',
 	robots: 'all',
