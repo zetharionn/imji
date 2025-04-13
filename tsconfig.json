@@ -24,8 +24,6 @@
 		"allowJs": true,
 		"plugins": [{ "name": "next" }],
 		"incremental": true,
-		"skipDefaultLibCheck": true,
-		"skipLibCheck": true,
 		"strict": true,
 		"noImplicitAny": true,
 		"noUnusedLocals": true,
@@ -34,6 +32,7 @@
 		"esModuleInterop": true,
 		"isolatedModules": true,
 		"allowSyntheticDefaultImports": true,
-		"forceConsistentCasingInFileNames": true
+		"forceConsistentCasingInFileNames": true,
+		"skipLibCheck": true
 	}
 }
