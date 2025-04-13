@@ -1,6 +1,6 @@
 {
-	"include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
-	"exclude": ["node_modules/**/*", "dist/**/*"],
+	"include": ["**/*.ts", "**/*.tsx", "next-env.d.ts", ".next/types/**/*.ts"],
+	"exclude": ["node_modules/**/*"],
 	"compilerOptions": {
 		"target": "ESNext",
 		"lib": ["ESNext", "DOM", "DOM.Iterable"],
@@ -22,11 +22,7 @@
 			"@shared/*": ["./shared/*"]
 		},
 		"allowJs": true,
-		"plugins": [
-			{
-				"name": "next"
-			}
-		],
+		"plugins": [{ "name": "next" }],
 		"incremental": true,
 		"skipDefaultLibCheck": true,
 		"skipLibCheck": true,
