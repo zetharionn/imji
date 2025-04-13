@@ -1,4 +1,5 @@
 import type { FC, PropsWithChildren } from 'react'
+import './styles'
 
 const Layout: FC<PropsWithChildren> = ({ children }) => {
 	return (
@@ -7,4 +8,5 @@ const Layout: FC<PropsWithChildren> = ({ children }) => {
 		</html>
 	)
 }
+
 export default Layout
