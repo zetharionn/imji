@@ -1,7 +1,7 @@
-import type { Metadata } from 'next'
-import type { FC, PropsWithChildren } from 'react'
 import { Analytics } from '@vercel/analytics/next'
 import { SpeedInsights } from '@vercel/speed-insights/next'
+import type { Metadata } from 'next'
+import type { FC, PropsWithChildren } from 'react'
 import './styles'
 
 export const metadata: Metadata = {
