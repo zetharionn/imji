@@ -1,7 +1,8 @@
 import { Analytics } from '@vercel/analytics/next'
 import { SpeedInsights } from '@vercel/speed-insights/next'
-import type { Metadata } from 'next'
 import type { FC, PropsWithChildren } from 'react'
+import type { Metadata } from 'next'
+import { Devtools } from './ui'
 import './styles'
 
 export const metadata: Metadata = {
@@ -34,6 +35,7 @@ const Layout: FC<PropsWithChildren> = ({ children }) => {
 		<html lang='en'>
 			<body>
 				<Analytics />
+				<Devtools />
 				{children}
 				<SpeedInsights />
 			</body>
