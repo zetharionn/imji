@@ -1,8 +1,8 @@
+import { Providers } from '@shared/providers'
 import { Analytics } from '@vercel/analytics/next'
 import { SpeedInsights } from '@vercel/speed-insights/next'
 import type { Metadata } from 'next'
 import type { FC, PropsWithChildren } from 'react'
-import { Providers } from '@shared/providers'
 import { Devtools } from './ui'
 import './styles'
 
