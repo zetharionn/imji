@@ -1,6 +1,8 @@
 import type { Metadata } from 'next'
 import type { FC, PropsWithChildren } from 'react'
 import './styles'
+import { Analytics } from '@vercel/analytics/next'
+import { SpeedInsights } from '@vercel/speed-insights/next'
 
 export const metadata: Metadata = {
 	applicationName: 'Imji',
@@ -30,7 +32,11 @@ export const metadata: Metadata = {
 const Layout: FC<PropsWithChildren> = ({ children }) => {
 	return (
 		<html lang='en'>
-			<body>{children}</body>
+			<body>
+				<Analytics />
+				{children}
+				<SpeedInsights />
+			</body>
 		</html>
 	)
 }
