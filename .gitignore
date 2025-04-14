@@ -4,6 +4,7 @@ node_modules
 .pnpm-store
 .next
 .vercel
+next-env.d.ts
 build
 cache
 out
