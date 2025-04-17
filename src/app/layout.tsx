@@ -2,9 +2,12 @@ import { Providers } from '@shared/providers'
 import { Devtools } from '@shared/ui'
 import { Analytics } from '@vercel/analytics/next'
 import { SpeedInsights } from '@vercel/speed-insights/next'
+import { Outfit } from 'next/font/google'
 import type { Metadata } from 'next'
 import type { FC, PropsWithChildren } from 'react'
 import './styles'
+
+const outfit = Outfit()
 
 export const metadata: Metadata = {
 	applicationName: 'Imji',
@@ -33,7 +36,7 @@ export const metadata: Metadata = {
 
 const Layout: FC<PropsWithChildren> = ({ children }) => {
 	return (
-		<html lang='en'>
+		<html lang='en' className={outfit.className}>
 			<body>
 				<Providers>
 					<Analytics />
