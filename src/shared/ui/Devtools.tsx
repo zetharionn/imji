@@ -11,7 +11,7 @@ export const Devtools = memo(() => {
 
 	return (
 		<Suspense>
-			<Devtool />
+			<Devtool buttonPosition='bottom-left' position='left' />
 		</Suspense>
 	)
 })
