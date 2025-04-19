@@ -7,7 +7,9 @@ import { Outfit } from 'next/font/google'
 import type { FC, PropsWithChildren } from 'react'
 import './styles'
 
-const outfit = Outfit()
+const outfit = Outfit({
+	subsets: ['latin']
+})
 
 export const metadata: Metadata = {
 	applicationName: 'Imji',
