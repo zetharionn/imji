@@ -1,5 +1,5 @@
-import { type MutationState, useMutationState } from '@tanstack/react-query'
 import type { Upload } from '@shared/api'
+import { type MutationState, useMutationState } from '@tanstack/react-query'
 
 export const useUploadState = () => {
 	const mutation = useMutationState<MutationState<Upload>>({

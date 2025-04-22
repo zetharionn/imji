@@ -1,7 +1,7 @@
-import { useMutation } from '@tanstack/react-query'
-import { FileSchema } from '../../model'
 import { storage } from '@shared/api'
+import { useMutation } from '@tanstack/react-query'
 import * as v from 'valibot'
+import { FileSchema } from '../../model'
 
 export const useUpload = () =>
 	useMutation({
