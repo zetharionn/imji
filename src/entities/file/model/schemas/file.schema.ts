@@ -1,7 +1,7 @@
 import * as v from 'valibot'
 
 export const FileSchema = v.pipe(
-	v.file(),
+	v.file('Invalid query'),
 	v.mimeType(
 		[
 			'image/apng',
