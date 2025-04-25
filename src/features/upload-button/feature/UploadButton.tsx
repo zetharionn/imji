@@ -1,0 +1,19 @@
+'use client'
+
+import { useUpload } from '@entities/file'
+import { FileButton } from '../ui'
+
+export const UploadButton = () => {
+	const { mutate, isPending } = useUpload()
+
+	return (
+		<FileButton
+			variant='shadow'
+			accept='image/*'
+			onFile={mutate}
+			isLoading={isPending}
+		>
+			Choose file
+		</FileButton>
+	)
+}
