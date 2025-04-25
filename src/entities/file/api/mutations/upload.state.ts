@@ -1,3 +1,5 @@
+'use client'
+
 import type { Upload } from '@shared/api'
 import { type MutationState, useMutationState } from '@tanstack/react-query'
 
