@@ -1,3 +1,5 @@
+'use client'
+
 import { storage } from '@shared/api'
 import { useMutation } from '@tanstack/react-query'
 import * as v from 'valibot'
