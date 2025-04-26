@@ -1,6 +1,6 @@
-import { UploadZone } from '@features/upload-zone'
-import { UploadButton } from '@features/upload-button'
 import { PLATFORM } from '@entities/user'
+import { UploadButton } from '@features/upload-button'
+import { UploadZone } from '@features/upload-zone'
 
 export const Uploader = () => {
 	return (
