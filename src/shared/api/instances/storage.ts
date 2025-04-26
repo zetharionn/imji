@@ -1,5 +1,5 @@
 import { BUCKET } from '@shared/constants'
-import { supabaseClient } from './supabase'
 import { Storage } from '../services'
+import { supabaseClient } from './supabase'
 
 export const storage = new Storage(supabaseClient, BUCKET)
