@@ -1,10 +1,10 @@
-import { Providers } from '@shared/providers'
 import { Devtools } from '@shared/ui'
 import { Analytics } from '@vercel/analytics/next'
 import { SpeedInsights } from '@vercel/speed-insights/next'
 import type { Metadata } from 'next'
 import { Outfit } from 'next/font/google'
 import type { FC, PropsWithChildren } from 'react'
+import { Providers } from './providers'
 import './styles'
 
 const outfit = Outfit({
