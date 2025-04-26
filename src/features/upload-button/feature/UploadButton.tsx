@@ -9,6 +9,7 @@ export const UploadButton = () => {
 	return (
 		<FileButton
 			variant='shadow'
+			color='primary'
 			accept='image/*'
 			onFile={mutate}
 			isLoading={isPending}
