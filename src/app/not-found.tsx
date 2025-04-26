@@ -1,4 +1,4 @@
-import Fallback from '@pages/fallback'
+import Fallback from '@views/fallback'
 
 const NotFound = () => {
 	return <Fallback />

@@ -1,4 +1,4 @@
-import Loader from '@pages/loader'
+import Loader from '@views/loader'
 
 const Loading = () => {
 	return <Loader />
