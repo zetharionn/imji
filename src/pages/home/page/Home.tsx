@@ -1,3 +1,5 @@
+import { Uploader } from '@widgets/uploader'
+
 const Home = () => {
 	return (
 		<>
@@ -9,6 +11,7 @@ const Home = () => {
 						anytime.
 					</p>
 				</div>
+				<Uploader />
 			</div>
 		</>
 	)
