@@ -1,2 +1,2 @@
 export * from './services'
-export * from './instance'
+export * from './instances'

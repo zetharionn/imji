@@ -1,40 +1,32 @@
-export interface IStorageService {
-	upload: (path: string, file: File) => Promise<UploadResponse>
-	retrieve: (path: string) => Promise<RetrieveResponse>
-	move: (path: string, newPath: string) => Promise<MoveResponse>
-	remove: (paths: string[]) => Promise<RemoveResponse>
-	download: (path: string) => Promise<DownloadResponse>
+export interface IStorage {
+	upload: (path: string, file: File) => Promise<Upload>
+	retrieve: (path: string) => Promise<Retrieve>
+	move: (path: string, newPath: string) => Promise<Move>
+	remove: (paths: string[]) => Promise<Remove>
+	download: (path: string) => Promise<Download>
 	list: (
 		path?: string,
 		options?: SearchOptions,
 		parameters?: FetchParameters
-	) => Promise<ListResponse>
+	) => Promise<List>
 }
 
-export interface UploadResponse {
-	data: { id: string; path: string; fullPath: string } | null
-	error: Error | null
-}
-export interface RetrieveResponse {
-	data: { publicUrl: string } | null
-	error: Error | null
-}
-export interface MoveResponse {
-	data: { message: string } | null
-	error: Error | null
-}
-export interface RemoveResponse {
-	error: Error | null
-}
-export interface DownloadResponse {
-	data: Blob | null
+export interface Response<T> {
+	data: T | null
 	error: Error | null
 }
 
-export interface ListResponse {
-	data: FileObject[] | null
-	error: Error | null
-}
+export type Upload = Response<{ id: string; path: string; fullPath: string }>
+
+export type Retrieve = Response<{ publicUrl: string }>
+
+export type Move = Response<{ message: string }>
+
+export type Remove = Response<null>
+
+export type Download = Response<Blob>
+
+export type List = Response<FileObject[]>
 
 export interface Bucket {
 	created_at: string

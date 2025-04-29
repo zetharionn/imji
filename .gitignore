@@ -1,31 +1,28 @@
-# Node
 node_modules
 .pnp
 .pnp.js
 .pnpm-store
-
-# Enviroment
-.env
-*.local
-
-# Logs
+.next
+.vercel
+next-env.d.ts
+build
+cache
+out
+dist
+dist-ssr
+coverage
 logs
 *.log
 pnpm-debug.log*
 pnpm-error.log*
-
-# Build
-build
-cache
-dist
-dist-ssr
-
-# Editor directories and files
+.env
+*.local
 .vscode/*
 !.vscode/extensions.json
 .idea
 .DS_Store
 *.suo
+*.pem
 *.ntvs*
 *.njsproj
 *.sln
