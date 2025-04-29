@@ -1,3 +1,5 @@
+'use client'
+
 import { ImageCard } from '@features/image-card'
 import type { IViewer } from './Viewer.types'
 import { useRetrieve } from '@entities/file'

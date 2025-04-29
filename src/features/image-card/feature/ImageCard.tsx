@@ -1,3 +1,5 @@
+'use client'
+
 import { Card, CardBody, Image } from '@heroui/react'
 import type { IImageCard } from './ImageCard.types'
 import NextImage from 'next/image'
