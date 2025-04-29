@@ -1,1 +1,2 @@
-export * from './UploadZone'
+export * from './FileDropzone'
+export * from './FileDropzone.types'

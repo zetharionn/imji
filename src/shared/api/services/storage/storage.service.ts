@@ -1,11 +1,7 @@
 import type { SupabaseClient } from '@supabase/supabase-js'
-import type {
-	FetchParameters,
-	IStorageService,
-	SearchOptions
-} from './storage.types'
+import type { FetchParameters, IStorage, SearchOptions } from './storage.types'
 
-export class StorageService implements IStorageService {
+export class Storage implements IStorage {
 	private readonly supabaseClient: SupabaseClient
 	private readonly bucket: string
 
@@ -46,7 +42,7 @@ export class StorageService implements IStorageService {
 			.from(this.bucket)
 			.remove(paths)
 
-		return { error }
+		return { data: null, error }
 	}
 
 	async download(path: string) {

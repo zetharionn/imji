@@ -1,5 +1,0 @@
-User-agent: *
-Disallow: /i/
-Disallow: /google1a7988065d11a24a.html
-Disallow: /yandex_4b015536ab38eaaa.html
-Sitemap: https://imji.vercel.app/sitemap.xml

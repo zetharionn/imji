@@ -1,42 +1,38 @@
 {
-	"exclude": ["node_modules/**/*", "dist/**/*"],
+	"include": ["**/*.ts", "**/*.tsx", "next-env.d.ts", ".next/types/**/*.ts"],
+	"exclude": ["node_modules/**/*"],
 	"compilerOptions": {
-		/* Language and Environment */
 		"target": "ESNext",
 		"lib": ["ESNext", "DOM", "DOM.Iterable"],
 		"noEmit": true,
-		"jsx": "react-jsx",
-
-		/* Modules */
+		"jsx": "preserve",
 		"module": "ESNext",
 		"moduleResolution": "bundler",
 		"moduleDetection": "force",
+		"resolveJsonModule": true,
 		"allowImportingTsExtensions": true,
 		"baseUrl": "./src",
 		"paths": {
+			"@/*": ["./*"],
 			"@app/*": ["./app/*"],
-			"@pages/*": ["./pages/*"],
+			"@views/*": ["./views/*"],
 			"@widgets/*": ["./widgets/*"],
 			"@features/*": ["./features/*"],
 			"@entities/*": ["./entities/*"],
 			"@shared/*": ["./shared/*"]
 		},
-
-		/* Completeness */
-		"skipDefaultLibCheck": true,
-		"skipLibCheck": true,
-
-		/* Type Checking */
+		"allowJs": true,
+		"plugins": [{ "name": "next" }],
+		"incremental": true,
 		"strict": true,
 		"noImplicitAny": true,
 		"noUnusedLocals": true,
 		"noUnusedParameters": true,
 		"strictFunctionTypes": true,
-
-		/* Interop Constraints */
 		"esModuleInterop": true,
 		"isolatedModules": true,
 		"allowSyntheticDefaultImports": true,
-		"forceConsistentCasingInFileNames": true
+		"forceConsistentCasingInFileNames": true,
+		"skipLibCheck": true
 	}
 }
