@@ -12,9 +12,9 @@
 		"start": "next start"
 	},
 	"dependencies": {
-		"@heroui/react": "^2.7.6",
+		"@heroui/react": "^2.7.8",
 		"@supabase/supabase-js": "^2.49.4",
-		"@tanstack/react-query": "^5.74.7",
+		"@tanstack/react-query": "^5.74.9",
 		"@vercel/analytics": "^1.5.0",
 		"@vercel/speed-insights": "^1.2.0",
 		"framer-motion": "^12.9.2",
@@ -25,7 +25,7 @@
 	},
 	"devDependencies": {
 		"@biomejs/biome": "^1.9.4",
-		"@tanstack/react-query-devtools": "^5.74.7",
+		"@tanstack/react-query-devtools": "^5.74.9",
 		"@types/node": "^22.15.3",
 		"@types/react": "^19.1.2",
 		"@types/react-dom": "^19.1.2",
