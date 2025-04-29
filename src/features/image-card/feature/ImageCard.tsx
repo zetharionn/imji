@@ -1,9 +1,9 @@
 'use client'
 
 import { Card, CardBody, Image } from '@heroui/react'
-import type { IImageCard } from './ImageCard.types'
 import NextImage from 'next/image'
 import type { FC } from 'react'
+import type { IImageCard } from './ImageCard.types'
 
 export const ImageCard: FC<IImageCard> = ({ url }) => {
 	return (
