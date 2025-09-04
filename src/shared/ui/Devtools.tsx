@@ -1,4 +1,4 @@
-import { Suspense, lazy, memo } from 'react'
+import { lazy, memo, Suspense } from 'react'
 
 export const Devtools = memo(() => {
 	const Devtool =
