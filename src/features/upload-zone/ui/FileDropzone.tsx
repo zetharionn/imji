@@ -30,13 +30,14 @@ export const FileDropzone: FC<IFileDropzone> = memo(
 
 		return (
 			<>
-				<div
+				<section
+					aria-label='File Dropzone'
 					onDrop={handleDrop}
 					onDragOver={handleDragOver}
 					className={className}
 				>
 					{isLoading ? spinner : children}
-				</div>
+				</section>
 			</>
 		)
 	}
