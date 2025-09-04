@@ -6,10 +6,15 @@
 		"useIgnoreFile": true,
 		"defaultBranch": "main"
 	},
-	"assist": { "actions": { "source": { "organizeImports": "on" } } },
 	"linter": {
 		"enabled": true,
 		"rules": {
+			"recommended": true
+		}
+	},
+	"assist": {
+		"enabled": true,
+		"actions": {
 			"recommended": true
 		}
 	},
