@@ -20,13 +20,15 @@
 	},
 	"formatter": {
 		"enabled": true,
+		"formatWithErrors": false,
 		"indentStyle": "tab",
 		"indentWidth": 2,
 		"lineEnding": "lf",
 		"lineWidth": 80,
 		"attributePosition": "auto",
 		"bracketSpacing": true,
-		"expand": "auto"
+		"expand": "auto",
+		"useEditorconfig": true
 	},
 	"javascript": {
 		"formatter": {
