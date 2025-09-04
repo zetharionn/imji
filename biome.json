@@ -31,18 +31,70 @@
 		"useEditorconfig": true
 	},
 	"javascript": {
+		"parser": {
+			"unsafeParameterDecoratorsEnabled": false,
+			"jsxEverywhere": true
+		},
 		"formatter": {
 			"quoteStyle": "single",
+			"jsxQuoteStyle": "single",
+			"quoteProperties": "asNeeded",
+			"trailingCommas": "none",
 			"semicolons": "asNeeded",
 			"arrowParentheses": "asNeeded",
-			"jsxQuoteStyle": "single",
-			"trailingCommas": "none",
-			"bracketSpacing": true,
-			"bracketSameLine": false,
+			"enabled": true,
 			"indentStyle": "tab",
 			"indentWidth": 2,
 			"lineEnding": "lf",
-			"lineWidth": 80
+			"lineWidth": 80,
+			"bracketSameLine": false,
+			"bracketSpacing": true,
+			"attributePosition": "auto",
+			"expand": "auto",
+			"operatorLinebreak": "after"
+		},
+		"jsxRuntime": "transparent",
+		"linter": {
+			"enabled": true
+		},
+		"assist": {
+			"enabled": true
+		}
+	},
+	"css": {
+		"parser": {
+			"cssModules": true
+		},
+		"formatter": {
+			"enabled": true,
+			"indentStyle": "tab",
+			"indentWidth": 2,
+			"lineEnding": "lf",
+			"lineWidth": 80,
+			"quoteStyle": "single"
+		},
+		"linter": {
+			"enabled": true
+		},
+		"assist": {
+			"enabled": true
+		}
+	},
+	"html": {
+		"parser": {
+			"interpolation": true
+		},
+		"formatter": {
+			"enabled": true,
+			"indentStyle": "tab",
+			"indentWidth": 2,
+			"lineEnding": "lf",
+			"lineWidth": 80,
+			"attributePosition": "auto",
+			"bracketSameLine": false,
+			"whitespaceSensitivity": "css",
+			"indentScriptAndStyle": true,
+			"selfCloseVoidElements": "always"
 		}
 	}
 }
