@@ -29,16 +29,14 @@ export const FileDropzone: FC<IFileDropzone> = memo(
 		)
 
 		return (
-			<>
-				<section
-					aria-label='File Dropzone'
-					onDrop={handleDrop}
-					onDragOver={handleDragOver}
-					className={className}
-				>
-					{isLoading ? spinner : children}
-				</section>
-			</>
+			<section
+				aria-label='File Dropzone'
+				onDrop={handleDrop}
+				onDragOver={handleDragOver}
+				className={className}
+			>
+				{isLoading ? spinner : children}
+			</section>
 		)
 	}
 )
