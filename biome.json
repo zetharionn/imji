@@ -9,7 +9,6 @@
 	"linter": {
 		"enabled": true,
 		"domains": {
-			"project": "recommended",
 			"next": "recommended"
 		},
 		"rules": {
