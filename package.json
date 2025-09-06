@@ -36,7 +36,6 @@
 	},
 	"engines": {
 		"node": "22.x",
-		"pnpm": "10.x"
-	},
-	"packageManager": "pnpm@10.15.1"
+		"bun": "1.x"
+	}
 }
