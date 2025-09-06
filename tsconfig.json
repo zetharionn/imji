@@ -19,7 +19,8 @@
 			"@widgets/*": ["./widgets/*"],
 			"@features/*": ["./features/*"],
 			"@entities/*": ["./entities/*"],
-			"@shared/*": ["./shared/*"]
+			"@shared/*": ["./shared/*"],
+			"@convex/*": ["../convex/*"]
 		},
 		"allowJs": true,
 		"plugins": [{ "name": "next" }],
