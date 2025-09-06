@@ -27,6 +27,7 @@
 		"@biomejs/biome": "^2.2.3",
 		"@tailwindcss/postcss": "^4.1.13",
 		"@tanstack/react-query-devtools": "^5.87.0",
+		"@types/bun": "^1.2.21",
 		"@types/node": "^24.3.1",
 		"@types/react": "^19.1.12",
 		"@types/react-dom": "^19.1.9",
@@ -36,7 +37,6 @@
 	},
 	"engines": {
 		"node": "22.x",
-		"pnpm": "10.x"
-	},
-	"packageManager": "pnpm@10.15.1"
+		"bun": "1.x"
+	}
 }
