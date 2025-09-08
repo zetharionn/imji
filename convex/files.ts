@@ -25,6 +25,11 @@ export const upload = action({
 	}
 })
 
+export const retrieve = action({
+	args: { id: v.string() },
+	handler: async (ctx, args) => await ctx.storage.getUrl(args.id)
+})
+
 export const url = internalMutation({
 	handler: async ctx => await ctx.storage.generateUploadUrl()
 })
