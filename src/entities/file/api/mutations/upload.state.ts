@@ -1,10 +1,9 @@
 'use client'
 
-import type { Upload } from '@shared/api'
 import { type MutationState, useMutationState } from '@tanstack/react-query'
 
 export const useUploadState = () => {
-	const mutation = useMutationState<MutationState<Upload>>({
+	const mutation = useMutationState<MutationState>({
 		filters: { mutationKey: ['upload'] }
 	})
 
