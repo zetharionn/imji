@@ -1,8 +1,9 @@
 import { bufferToFile } from '@convex/lib'
-import { v } from 'convex/values'
+import { ConvexError, v } from 'convex/values'
 import * as valibot from 'valibot'
 import { internal } from './_generated/api'
 import { action, internalMutation } from './_generated/server'
+import type { UploadResponse } from './files.types'
 import { FileSchema } from './model'
 
 export const upload = action({
@@ -14,14 +15,20 @@ export const upload = action({
 		)
 		const url = await ctx.runMutation(internal.files.url)
 
-		result.success &&
-			(await fetch(url, {
-				method: 'POST',
-				body: result.output
-			}).then(async response => {
-				const { storageId } = await response.json()
-				await ctx.runMutation(internal.files.store, { id: storageId })
-			}))
+		if (!result.success) {
+			const messages = result.issues.map(issue => issue.message).join()
+			throw new ConvexError(messages)
+		}
+
+		const response = await fetch(url, { method: 'POST', body: result.output })
+
+		if (!response.ok) {
+			throw new Error(response.statusText)
+		}
+
+		const { storageId } = (await response.json()) as UploadResponse
+		await ctx.runMutation(internal.files.store, { id: storageId })
+		return { id: storageId }
 	}
 })
 
