@@ -1,16 +1,15 @@
 'use client'
 
-import { storage } from '@shared/api'
+import { api } from '@convex/_generated/api'
 import { useSuspenseQuery } from '@tanstack/react-query'
-import * as v from 'valibot'
-import { UrlSchema } from '../../model'
+import { useAction } from 'convex/react'
 
-export const useRetrieve = (path: string) =>
-	useSuspenseQuery({
+export const useRetrieve = (path: string) => {
+	const retrieve = useAction(api.files.retrieve)
+
+	return useSuspenseQuery({
 		queryKey: ['retrieve'],
-		queryFn: async () => {
-			const { data } = await storage.retrieve(path)
-			return v.parse(UrlSchema, data?.publicUrl)
-		},
+		queryFn: async () => await retrieve({ id: path }),
 		retry: false
 	})
+}

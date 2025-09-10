@@ -1,23 +1,26 @@
 'use client'
 
+import { api } from '@convex/_generated/api'
 import { addToast, Link } from '@heroui/react'
-import { storage } from '@shared/api'
 import { useMutation } from '@tanstack/react-query'
-import * as v from 'valibot'
-import { FileSchema } from '../../model'
+import { useAction } from 'convex/react'
 
-export const useUpload = () =>
-	useMutation({
+export const useUpload = () => {
+	const upload = useAction(api.files.upload)
+
+	return useMutation({
 		mutationKey: ['upload'],
-		mutationFn: async (file: File) =>
-			await storage.upload(crypto.randomUUID(), v.parse(FileSchema, file)),
-		onSuccess: ({ data }) =>
+		mutationFn: async (file: File) => {
+			const buffer = await file.arrayBuffer()
+			return await upload({ buffer })
+		},
+		onSuccess: ({ id }) =>
 			addToast({
 				variant: 'flat',
 				color: 'success',
 				title: 'Success',
 				description: 'Successfully uploaded',
-				endContent: <Link href={`i/${data?.path}`}>{data?.path}</Link>
+				endContent: <Link href={`i/${id}`}>{id}</Link>
 			}),
 		onError: ({ message }) =>
 			addToast({
@@ -27,3 +30,4 @@ export const useUpload = () =>
 				description: message
 			})
 	})
+}
