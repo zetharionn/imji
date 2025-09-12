@@ -19,8 +19,7 @@
 			"@widgets/*": ["./widgets/*"],
 			"@features/*": ["./features/*"],
 			"@entities/*": ["./entities/*"],
-			"@shared/*": ["./shared/*"],
-			"@convex/*": ["../convex/*"]
+			"@shared/*": ["./shared/*"]
 		},
 		"allowJs": true,
 		"plugins": [{ "name": "next" }],
