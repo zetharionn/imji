@@ -1,5 +1,4 @@
-import { BUCKET } from '@entities/storage'
-import { storage } from '../instance'
+import { BUCKET, storage } from '@entities/storage'
 
 export const upload = async (file: File) =>
 	await storage.createFile(BUCKET, crypto.randomUUID(), file)
