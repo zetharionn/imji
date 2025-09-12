@@ -12,13 +12,11 @@
 		"start": "next start"
 	},
 	"dependencies": {
-		"@convex-dev/react-query": "^0.0.0-alpha.11",
 		"@heroui/react": "^2.8.4",
 		"@tanstack/react-query": "^5.87.4",
 		"@vercel/analytics": "^1.5.0",
 		"@vercel/speed-insights": "^1.2.0",
 		"appwrite": "^20.0.0",
-		"convex": "^1.27.0",
 		"framer-motion": "^12.23.12",
 		"next": "15.5.2",
 		"react": "^19.1.1",
@@ -33,7 +31,6 @@
 		"@types/node": "^24.3.1",
 		"@types/react": "^19.1.12",
 		"@types/react-dom": "^19.1.9",
-		"file-type": "^21.0.0",
 		"postcss": "^8.5.6",
 		"tailwindcss": "4.1.13",
 		"typescript": "^5.9.2"
