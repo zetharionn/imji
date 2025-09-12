@@ -1,15 +1,12 @@
 'use client'
 
-import { api } from '@convex/_generated/api'
+import { retrieve } from '@entities/storage'
 import { useSuspenseQuery } from '@tanstack/react-query'
-import { useAction } from 'convex/react'
 
 export const useRetrieve = (path: string) => {
-	const retrieve = useAction(api.files.retrieve)
-
 	return useSuspenseQuery({
 		queryKey: ['retrieve'],
-		queryFn: async () => await retrieve({ id: path }),
+		queryFn: async () => await retrieve(path),
 		retry: false
 	})
 }
