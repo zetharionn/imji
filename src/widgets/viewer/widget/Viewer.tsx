@@ -8,5 +8,9 @@ import type { IViewer } from './Viewer.types'
 export const Viewer: FC<IViewer> = ({ path }) => {
 	const { data } = useRetrieve(path)
 
-	return <div>{data && <ImageCard url={data} />}</div>
+	return (
+		<div>
+			<ImageCard url={data} />
+		</div>
+	)
 }
