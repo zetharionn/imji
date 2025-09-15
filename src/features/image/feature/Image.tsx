@@ -8,10 +8,10 @@ export const Image: FC<IImage> = ({ url }) => {
 		<Picture
 			as={NextImage}
 			src={url}
-			width={1000}
-			height={500}
+			width={1250}
+			height={625}
 			alt='Not found'
-			className='object-contain w-full h-full rounded-t-lg'
+			className='object-contain object-center h-full w-full'
 			isBlurred
 		/>
 	)
