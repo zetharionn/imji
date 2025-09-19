@@ -1,7 +1,8 @@
 'use client'
 
 import { useRetrieve } from '@entities/file'
-import { ImageCard } from '@features/image-card'
+import { Image } from '@features/image'
+import { Card, CardBody } from '@heroui/react'
 import { notFound } from 'next/navigation'
 import type { FC } from 'react'
 import type { IViewer } from './Viewer.types'
@@ -13,7 +14,11 @@ export const Viewer: FC<IViewer> = ({ path }) => {
 
 	return (
 		<div>
-			<ImageCard url={data} />
+			<Card>
+				<CardBody className='overflow-hidden'>
+					<Image url={data} />
+				</CardBody>
+			</Card>
 		</div>
 	)
 }
