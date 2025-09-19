@@ -1,2 +1,2 @@
 export * from './Devtools'
-export * from './Share'
+export * from './icons'

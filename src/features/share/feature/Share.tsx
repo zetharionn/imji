@@ -1,7 +1,7 @@
 'use client'
 
 import { addToast, Button } from '@heroui/react'
-import { ShareIcon } from '../icons'
+import { ShareIcon } from '@shared/ui/icons'
 
 export const Share = () => {
 	const handlePress = async () => {
