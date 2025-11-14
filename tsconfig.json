@@ -1,11 +1,17 @@
 {
-	"include": ["**/*.ts", "**/*.tsx", "next-env.d.ts", ".next/types/**/*.ts"],
+	"include": [
+		"**/*.ts",
+		"**/*.tsx",
+		"next-env.d.ts",
+		".next/types/**/*.ts",
+		".next/dev/types/**/*.ts"
+	],
 	"exclude": ["node_modules/**/*"],
 	"compilerOptions": {
 		"target": "ESNext",
 		"lib": ["ESNext", "DOM", "DOM.Iterable"],
 		"noEmit": true,
-		"jsx": "preserve",
+		"jsx": "react-jsx",
 		"module": "ESNext",
 		"moduleResolution": "bundler",
 		"moduleDetection": "force",
@@ -22,7 +28,11 @@
 			"@shared/*": ["./shared/*"]
 		},
 		"allowJs": true,
-		"plugins": [{ "name": "next" }],
+		"plugins": [
+			{
+				"name": "next"
+			}
+		],
 		"incremental": true,
 		"strict": true,
 		"noImplicitAny": true,
