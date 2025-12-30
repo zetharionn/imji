@@ -7,7 +7,7 @@ export const Christmas = () => {
 				<div className='flex justify-center w-full'>
 					<p className='text-xl'>Happy new year</p>
 				</div>
-				<div className='absolute inset-0 bg-linear-to-r from-fuchsia-500 via-red-500 to-amber-500 rounded-lg blur-md opacity-50 group-hover:opacity-100 transition ease-out duration-1000 -z-1' />
+				<div className='absolute inset-0 bg-linear-to-r from-fuchsia-500 via-red-500 to-amber-500 rounded-lg blur-md sm:opacity-50 group-hover:opacity-100 transition ease-out duration-1000 -z-1' />
 			</Alert>
 		</div>
 	)
