@@ -2,7 +2,7 @@
 
 import { Spinner } from '@heroui/react'
 import { type DragEvent, type FC, memo, useCallback } from 'react'
-import type { IFileDropzone } from './FileDropzone.types'
+import type { IFileDropzone } from './FileDropzone.types.ts'
 
 export const FileDropzone: FC<IFileDropzone> = memo(
 	({
