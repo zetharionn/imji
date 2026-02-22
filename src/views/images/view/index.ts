@@ -1,2 +1,1 @@
-export { default } from './Images'
-export * from './Images.types'
+export { default } from './Images.tsx'

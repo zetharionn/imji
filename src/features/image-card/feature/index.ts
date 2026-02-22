@@ -1,2 +1,1 @@
-export * from './ImageCard'
-export * from './ImageCard.types'
+export { ImageCard } from './ImageCard.tsx'

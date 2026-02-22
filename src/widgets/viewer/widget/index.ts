@@ -1,2 +1,1 @@
-export * from './Viewer'
-export * from './Viewer.types'
+export { Viewer } from './Viewer.tsx'

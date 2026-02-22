@@ -1,1 +1,1 @@
-export * from './retrieve.ts'
+export { useRetrieve } from './retrieve.ts'

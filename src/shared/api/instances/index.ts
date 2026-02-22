@@ -1,2 +1,2 @@
-export * from './appwrite'
-export * from './query'
+export { appwriteClient } from './appwrite.ts'
+export { getQueryClient } from './query.ts'

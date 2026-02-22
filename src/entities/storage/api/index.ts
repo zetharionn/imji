@@ -1,2 +1,2 @@
-export * from './instance'
-export * from './methods'
+export { storage } from './instance.ts'
+export { retrieve, upload } from './methods'

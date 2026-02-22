@@ -1,2 +1,1 @@
-export * from './FileButton'
-export * from './FileButton.types'
+export { FileButton } from './FileButton.tsx'

@@ -1,1 +1,1 @@
-export * from './instances'
+export { appwriteClient, getQueryClient } from './instances'

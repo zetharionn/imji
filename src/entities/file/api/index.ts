@@ -1,2 +1,2 @@
-export * from './mutations'
-export * from './queries'
+export { useUpload } from './mutations'
+export { useRetrieve } from './queries'

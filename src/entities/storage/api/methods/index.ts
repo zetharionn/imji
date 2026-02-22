@@ -1,2 +1,2 @@
-export * from './retrieve'
-export * from './upload'
+export { retrieve } from './retrieve.ts'
+export { upload } from './upload.ts'

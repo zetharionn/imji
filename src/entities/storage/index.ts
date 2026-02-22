@@ -1,2 +1,2 @@
-export * from './api'
-export * from './constants'
+export { retrieve, storage, upload } from './api'
+export { BUCKET } from './constants'

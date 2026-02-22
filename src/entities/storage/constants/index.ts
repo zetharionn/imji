@@ -1,1 +1,1 @@
-export * from './bucket'
+export { BUCKET } from './bucket.ts'

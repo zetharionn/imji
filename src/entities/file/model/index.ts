@@ -1,1 +1,1 @@
-export * from './schemas'
+export { FileSchema } from './schemas'

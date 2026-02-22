@@ -1,4 +1,1 @@
-export * from './HeroUI'
-export * from './Providers'
-export * from './Query'
-export * from './Toast'
+export { Providers } from './Providers.tsx'

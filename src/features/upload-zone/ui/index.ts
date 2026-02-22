@@ -1,2 +1,1 @@
-export * from './FileDropzone'
-export * from './FileDropzone.types'
+export { FileDropzone } from './FileDropzone.tsx'

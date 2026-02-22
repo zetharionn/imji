@@ -1,1 +1,1 @@
-export * from './UploadZone'
+export { UploadZone } from './UploadZone.tsx'

@@ -1,2 +1,2 @@
-export * from './api'
-export * from './model'
+export { useRetrieve, useUpload } from './api'
+export { FileSchema } from './model'
