@@ -1,1 +1,1 @@
-export { UploadZone } from './feature'
+export { UploadZone } from './feature/UploadZone.tsx'

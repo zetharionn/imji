@@ -1,1 +1,1 @@
-export * from './feature'
+export { ImageCard } from './feature/ImageCard.tsx'

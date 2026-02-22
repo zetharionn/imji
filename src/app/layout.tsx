@@ -4,8 +4,8 @@ import { SpeedInsights } from '@vercel/speed-insights/next'
 import type { Metadata } from 'next'
 import { Outfit } from 'next/font/google'
 import type { FC, PropsWithChildren } from 'react'
-import { Providers } from './providers'
-import './styles'
+import { Providers } from './providers/Providers.tsx'
+import './styles/index.css'
 
 const outfit = Outfit({
 	subsets: ['latin']
