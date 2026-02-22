@@ -1,1 +1,1 @@
-export * from './Devtools'
+export { Devtools } from './Devtools.tsx'

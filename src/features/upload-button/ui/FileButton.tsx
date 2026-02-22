@@ -2,7 +2,7 @@
 
 import { Button, type PressEvent } from '@heroui/react'
 import { type ChangeEvent, type FC, memo, useCallback, useRef } from 'react'
-import type { IFileButton } from './FileButton.types'
+import type { IFileButton } from './FileButton.types.ts'
 
 export const FileButton: FC<IFileButton> = memo(
 	({

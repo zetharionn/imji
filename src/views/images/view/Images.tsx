@@ -1,6 +1,6 @@
 import { Viewer } from '@widgets/viewer'
 import type { FC } from 'react'
-import type { IImages } from './Images.types'
+import type { IImages } from './Images.types.ts'
 
 const Images: FC<IImages> = ({ path }) => {
 	return (

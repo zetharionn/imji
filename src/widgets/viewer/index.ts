@@ -1,1 +1,1 @@
-export * from './widget'
+export { Viewer } from './widget/Viewer.tsx'

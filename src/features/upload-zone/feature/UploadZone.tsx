@@ -1,7 +1,7 @@
 'use client'
 
 import { useUpload } from '@entities/file'
-import { FileDropzone } from '../ui'
+import { FileDropzone } from '../ui/FileDropzone.tsx'
 
 export const UploadZone = () => {
 	const { mutate, isPending } = useUpload()

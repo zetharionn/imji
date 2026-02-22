@@ -3,7 +3,7 @@
 import { Card, CardBody, Image } from '@heroui/react'
 import NextImage from 'next/image'
 import type { FC } from 'react'
-import type { IImageCard } from './ImageCard.types'
+import type { IImageCard } from './ImageCard.types.ts'
 
 export const ImageCard: FC<IImageCard> = ({ url }) => {
 	return (
