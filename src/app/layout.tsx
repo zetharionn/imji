@@ -1,6 +1,4 @@
 import { Devtools } from '@shared/ui'
-import { Analytics } from '@vercel/analytics/next'
-import { SpeedInsights } from '@vercel/speed-insights/next'
 import type { Metadata } from 'next'
 import { Outfit } from 'next/font/google'
 import type { FC, PropsWithChildren } from 'react'
@@ -43,10 +41,8 @@ const Layout: FC<PropsWithChildren> = ({ children }) => {
 			<body>
 				<Providers>
 					<Header />
-					<Analytics />
-					<Devtools />
 					{children}
-					<SpeedInsights />
+					<Devtools />
 				</Providers>
 			</body>
 		</html>
