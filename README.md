@@ -7,6 +7,10 @@
 
 </div>
 
+## Deprecation
+
+This repository is deprecated and no longer maintained.
+
 ## License
 
 See [MIT license](https://github.com/zetharionn/imji/blob/main/LICENSE.md).
