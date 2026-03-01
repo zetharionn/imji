@@ -1,12 +1,9 @@
 import { Devtools } from '@shared/ui'
-import { Analytics } from '@vercel/analytics/next'
-import { SpeedInsights } from '@vercel/speed-insights/next'
 import type { Metadata } from 'next'
 import { Outfit } from 'next/font/google'
 import type { FC, PropsWithChildren } from 'react'
 import { Providers } from './providers/Providers.tsx'
 import './styles/index.css'
-import { Header } from '@widgets/header'
 
 const outfit = Outfit({
 	subsets: ['latin']
@@ -42,11 +39,8 @@ const Layout: FC<PropsWithChildren> = ({ children }) => {
 		<html lang='en' className={outfit.className}>
 			<body>
 				<Providers>
-					<Header />
-					<Analytics />
-					<Devtools />
 					{children}
-					<SpeedInsights />
+					<Devtools />
 				</Providers>
 			</body>
 		</html>
